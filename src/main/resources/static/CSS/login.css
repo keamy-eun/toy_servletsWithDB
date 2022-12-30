@@ -1,0 +1,81 @@
+/* * {
+  border: 1px dotted gray;
+} */
+
+.display-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.justify-contents-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1%;
+}
+.text-align-center {
+  text-align: center;
+}
+.font-size-30px {
+  font-size: 20px;
+}
+.font-size-50px {
+  font-size: 50px;
+}
+.border-radious {
+  border-radius: 3%;
+}
+.input-size {
+  box-sizing: border-box;
+}
+.margin-left {
+  margin-left: 8%;
+}
+.padding-login {
+  padding: 3% 3% 15% 3%;
+}
+.background-color-main {
+  background-color: rgb(250, 250, 250);
+}
+.login-button {
+  padding: 0.5% 8.5% 1% 8.5%;
+}
+.padding-top {
+  padding-top: 2%;
+}
+.button-color {
+  background-color: rgb(88, 121, 255);
+  color: white;
+  border-color: rgb(88, 121, 255);
+}
+.font-size-35px {
+  font-size: 35px;
+}
+.background-color-main {
+  background-color: rgb(250, 250, 250);
+  border: rgb(250, 250, 250);
+  margin: rgb(250, 250, 250);
+}
+.main-title {
+  padding: 3%;
+  min-width: 30%;
+}
+.display-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.main-menu {
+  justify-content: space-around;
+  padding-bottom: 3%;
+}
+.font-size-20px {
+  font-size: 20px;
+}
+.padding-address {
+  padding: 2%;
+}
+.deco-none {
+  text-decoration: none;
+}
+.text-align-left {
+  text-align: left;
+}

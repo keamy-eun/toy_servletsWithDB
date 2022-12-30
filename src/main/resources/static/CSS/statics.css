@@ -1,0 +1,66 @@
+aside {
+  width: 200px;
+  height: 180px;
+  padding: 15px;
+  margin: 15px;
+  float: right;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(91, 69, 151);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  padding: 5%;
+}
+
+img {
+  width: 450px;
+}
+
+.div1 {
+  display: flex;
+  justify-content: space-between;
+}
+.first-align {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 40px auto 0px 20%;
+}
+
+.display-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.main-menu {
+  justify-content: space-around;
+}
+.font-size-20px {
+  font-size: 20px;
+}
+
+.font-size-35px {
+  font-size: 35px;
+}
+.main-title {
+  padding: 3%;
+  min-width: 30%;
+  justify-content: start;
+}
+.background-color-main {
+  background-color: rgb(250, 250, 250);
+  border: rgb(250, 250, 250);
+  margin: rgb(250, 250, 250);
+}
+.display-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.padding-address {
+  padding: 2%;
+}

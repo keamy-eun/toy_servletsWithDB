@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/signUp.css" />
+  </head>
+
+  <body>
+    <div>
+      <div class="background-color-main">
+        <div class="display-flex-column">
+          <div class="font-size-35px main-title">
+            <strong
+              ><div>이어폰 사용설문</div>
+              <div>및 통계시스템</div></strong
+            >
+          </div>
+          <div class="display-flex-row main-menu font-size-20px">
+            <div><a href="../html/main.html" class="deco-none">HOME</a></div>
+          <div><a href="../html/statics.html" class="deco-none">통계</a></div>
+          <div><a href="../html/survey.html" class="deco-none">설문</a></div>
+          <div><a href="../html/login.html" class="deco-none">로그인</a></div>
+          <div>
+            <a href="../html/signUp.html" class="deco-none">회원가입</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form action="./main.html" method="get">
+      <div class="display-flex-column background-color-main">
+        <div class="padding_top font-size-30px">회원가입</div>
+        <div class="padding-main-top font-size-20px">
+          <table >
+            <tr>
+              <td>이름</td>
+              <td>
+                <input
+              class="textbox-width margin-left14-8"
+              type="text"
+              name="name"
+            />
+              </td>
+            </tr>
+            <tr>
+              <td>비밀번호</td>
+              <td>
+                <input
+              class="textbox-width margin-left14-8"
+              type="text"
+              name="pw"
+            />
+              </td>
+            </tr>
+            <tr>
+              <td>비밀번호 확인</td>
+              <td>
+                <input
+              class="textbox-width margin-left14-8"
+              type="text"
+              name="pwCheck"
+            />
+              </td>
+            </tr>
+            <tr>
+              <td>생년월일</td>
+              <td>
+                <input
+              class="textbox-width margin-left14-8"
+              type="text"
+              name="birth"
+            />
+              </td>
+            </tr>
+            <tr>
+              <td>이메일 주소</td>
+              <td><input
+                class="textbox-width margin-left14-8"
+                type="text"
+                name="emailAddress"
+              /></td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+            
+            
+          </table>
+          <!-- <div class="justify-contents-space-around padding-top">
+            <label for="">이름</label>
+            <input
+              class="textbox-width margin-left14-8"
+              type="text"
+              name="name"
+            />
+          </div>
+          <div class="justify-contents-space-around padding-main-height">
+            <label for="">비밀번호</label>
+            <input class="textbox-width margin-left10" name="pw" type="text" />
+          </div>
+          <div class="justify-contents-space-around padding-main-height">
+            <label for="">비밀번호 확인</label>
+            <input
+              class="textbox-width margin-left4"
+              name="pwCheck"
+              type="text"
+            />
+          </div>
+          <div class="justify-contents-space-around padding-main-height">
+            <label for="">생년월일</label>
+            <input
+              class="textbox-width margin-left10"
+              name="birth"
+              type="text"
+            />
+          </div>
+          <div class="justify-contents-space-around padding-main-height">
+            <label for="">이메일 주소</label>
+            <input
+              class="textbox-width margin-left7"
+              name="emailAddress"
+              type="text"
+            />
+          </div>-->
+          <div class="justify-contents-space-around padding-main-height">
+            <label for=""
+              >광고 수신여부 : SMS<input
+                type="checkbox"
+                name="receive_ad_sms"
+              />
+              / Email<input type="checkbox" name="receive_ad_email" />
+              로 수신하겠습니다
+            </label>
+          </div> 
+        </div>
+        <div>
+          <button type="submit" class="signup-button">Sign Up</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="padding-address background-color-main">
+      <div>
+        Git address :
+        <a href="https://github.com/keamy-eun/html_ToyTermProject.git"
+          >https://github.com/keamy-eun/html_ToyTermProject.git</a
+        >
+      </div>
+      <div>Email address : anxi0015@gmail.com / eun.wonki014@gmail.com</div>
+    </div>
+  </body>
+</html>
