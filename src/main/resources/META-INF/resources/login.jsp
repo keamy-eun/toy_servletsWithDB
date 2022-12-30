@@ -29,7 +29,7 @@
           />
         </div>
         <div class="card-body">
-          <form action="./login.html" method="get">
+          <form action="" method="get">
             <!-- login menu title -->
             <div class="text-center fs-1">LOGIN</div>
             <!-- input group -->

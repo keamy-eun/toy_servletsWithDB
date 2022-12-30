@@ -19,20 +19,27 @@
     <div class="container-fluid p-4">
       <!-- head -->
       <!-- title -->
-      <div class="pb-2">
+      <div class="pb-2 d-flex justify-content-between">
         <nav class="navbar navbar-light">
-          <a href="./main.html" class="fs-2 navbar-brand"
+          <a href="/Main" class="fs-2 navbar-brand"
             >이어폰 사용설문 및 통계시스템</a
           >
         </nav>
+        <%-- 로그인 했을때 환영문구 출력, 로그아웃버튼 --%>
+        <% if (session.getAttribute("NAME") != null) {%>
+        <div class="d-flex justify-content-around">
+        <div><%= session.getAttribute("NAME") %> 회원님 환영합니다! &nbsp;&nbsp;</div>
+        <div><a href="/Logout" class="" onclick="alert('로그아웃 되었습니다!');" > 로그아웃</a></div>
+        </div>
+        <% } %>
       </div>
       <div class="fs-4 mt-4 mb-4">
         <nav class="nav d-flex justify-content-around">
-          <a href="./main.html" class="nav-link text-dark">HOME</a>
+          <a href="/Main" class="nav-link text-dark">HOME</a>
           <a href="./statistics.html" class="nav-link text-dark">통계</a>
           <a href="./survey.html" class="nav-link text-dark">설문</a>
-          <a href="./login.html" class="nav-link text-dark">로그인</a>
-          <a href="./signUp.html" class="nav-link text-dark">회원가입</a>
+          <a href="/Login" class="nav-link text-dark">로그인</a>
+          <a href="/SignUp" class="nav-link text-dark">회원가입</a>
         </nav>
       </div>
     </div>
