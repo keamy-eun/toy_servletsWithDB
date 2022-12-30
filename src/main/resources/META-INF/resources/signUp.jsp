@@ -76,23 +76,23 @@
         <div class="form-group row">
           <label for="" class="col-sm-3 col-form-label mt-2">생년월일</label>
           <div class="col-sm-2">
-            <select name="" id="" class="form-control">
-              <option value="1">1990</option>
-              <option value="2">1991</option>
-              <option value="3">1992</option>
-              <option value="4">1993</option>
-              <option value="5">1994</option>
-              <option value="6">1995</option>
-              <option value="7">1996</option>
-              <option value="8">1997</option>
-              <option value="9">1998</option>
-              <option value="10">1999</option>
-              <option value="11">2000</option>
+            <select name="birthdayYear" id="" class="form-control">
+              <option value="1990">1990</option>
+              <option value="1991">1991</option>
+              <option value="1992">1992</option>
+              <option value="1993">1993</option>
+              <option value="1994">1994</option>
+              <option value="1995">1995</option>
+              <option value="1996">1996</option>
+              <option value="1997">1997</option>
+              <option value="1998">1998</option>
+              <option value="1999">1999</option>
+              <option value="2000">2000</option>
             </select>
           </div>
           <div class="col-sm-1">년</div>
           <div class="col-sm-2">
-            <select name="" id="" class="form-control">
+            <select name="birthdayMonth" id="" class="form-control">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -109,7 +109,7 @@
           </div>
           <div class="col-sm-1">월</div>
           <div class="col-sm-2">
-            <select name="" id="" class="form-control">
+            <select name="birthdayDay" id="" class="form-control">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -149,6 +149,7 @@
           <label for="" class="col-sm-3 col-form-label mt-2">이메일 주소</label>
           <div class="col-sm-4">
             <input
+              name="emailAddress"
               type="text"
               class="form-control"
               id="inputPassword"
@@ -158,6 +159,7 @@
           <div class="col-sm-1">@</div>
           <div class="col-sm-4">
             <input
+              name="domain"
               class="form-control"
               type="text"
               name=""
@@ -182,8 +184,8 @@
         <div class="form-group row mt-2">
           <div class="col-sm-3">광고수신여부 :</div>
           <div class="col-sm-9">
-            SMS <input type="checkbox" name="" class="" id="" /> / Email
-            <input type="checkbox" name="" id="" /> 로 수신하겠습니다
+            SMS <input type="checkbox" name="smsAd" class="" id="" /> / Email
+            <input type="checkbox" name="emailAd" id="" /> 로 수신하겠습니다
           </div>
         </div>
         <!-- btn -->
