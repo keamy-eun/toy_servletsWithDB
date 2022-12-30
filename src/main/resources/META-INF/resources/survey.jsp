@@ -49,6 +49,7 @@
 
   <%-- 선언 끝 --%>
 
+<div style="margin : 0% 10%">
 
     <form action="#" method="get" class="border border-3 m-5 container">
 
@@ -100,13 +101,18 @@
   </div>
 <%-- 여기서 for 끝 --%>
 
-        <div class="row mt-5">
+
+<%-- submit 버튼 --%>
+
+       <div class="row mt-5">
             <div class="col-5"></div>
-            <button type="submit" class="btn btn-primary mb-5 col-2">작성완료</button>
+            <button type="submit" class="btn btn-primary mb-5 col-2" 
+            onclick="if(confirm('제출하시겠습니까?')) return true; 
+                      else return false;">작성완료</button>
         </div>
 
 </form>
-
+</div>
 
 
 
