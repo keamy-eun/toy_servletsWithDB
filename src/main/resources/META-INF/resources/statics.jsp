@@ -23,13 +23,31 @@
           >
         </nav>
       </div>
-      <div class="fs-4 mt-4 mb-4">
+      <%-- <div class="fs-4 mt-4 mb-4">
         <nav class="nav d-flex justify-content-around">
           <a href="./main.jsp" class="nav-link text-dark">HOME</a>
           <a href="./staticsServlet" class="nav-link text-dark">통계</a>
           <a href="./surveyServlet" class="nav-link text-dark">설문</a>
           <a href="./login.jsp" class="nav-link text-dark">로그인</a>
           <a href="./signUp.jsp" class="nav-link text-dark">회원가입</a>
+        </nav>
+      </div> --%>
+      <div class="fs-4 mt-4 mb-4">
+        <nav class="nav d-flex justify-content-around ">
+    
+          <a href="./main.jsp" class="nav-link text-dark">HOME</a>
+
+          <span class="dropdown">
+          <a href="./staticsServlet" class="nav-link text-dark dropdown-toggle" data-bs-toggle="dropdown">통계</a>
+           <div id="dropdownId" class="dropdown-menu">
+              <a href="./Statics_menu1Servlet" class="dropdown-item">유/무선 이어폰 점유율</a>
+              <a href="./Statics_menu2Servlet" class="dropdown-item">무선이어폰 업체별 점유율</a>
+           </div>
+          </span>
+          <a href="./surveyServlet" class="nav-link text-dark">설문</a>
+          <a href="./login.jsp" class="nav-link text-dark">로그인</a>
+          <a href="./signUp.jsp" class="nav-link text-dark">회원가입</a>
+          <%-- login과 signup는  Webservlet 별칭이 없어 일단 jsp로 바로 연결되게 해둠--%>
         </nav>
       </div>
     </div>
@@ -49,12 +67,12 @@
         <div class="navbar-nav">
           <ul>
             <li>
-              <a href="./statics_menu1.jsp" class="nav-link"
+              <a href="./Statics_menu1Servlet" class="nav-link"
                 >유/무선 이어폰 점유율</a
               >
             </li>
             <li>
-              <a href="./statics_menu2.jsp" class="nav-link"
+              <a href="./Statics_menu2Servlet" class="nav-link"
                 >무선이어폰 업체별 점유율</a
               >
             </li>
