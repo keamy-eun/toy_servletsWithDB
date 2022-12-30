@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"%>
+<%@ page import="java.util.HashMap, java.util.ArrayList" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,317 +25,95 @@
           <div class="fs-4 mt-4 mb-4">
             <nav class="nav d-flex justify-content-around">
                 <a href="./main.html" class="nav-link text-dark">HOME</a>
-                <a href="./statistics.html" class="nav-link text-dark">통계</a>
-                <a href="./survey.html" class="nav-link text-dark">설문</a>
+                <a href="./staticsServlet" class="nav-link text-dark">통계</a>
+                <a href="./surveyServlet" class="nav-link text-dark">설문</a>
                 <a href="./login.html" class="nav-link text-dark">로그인</a>
                 <a href="./signUp.html" class="nav-link text-dark">회원가입</a>
               </nav>
           </div>
         </div>
 
+  
+  <% ArrayList<HashMap> question_list =  (ArrayList<HashMap>)request.getAttribute("question_list"); %>
+  <% ArrayList<HashMap> answer_list =  (ArrayList<HashMap>)request.getAttribute("answer_list"); %>
+ 
+  <% HashMap<String, Object> question_bundle = new HashMap<>(); %>
+  <% HashMap<String, Object> answer_bundle = new HashMap<>(); %>
+
+  <% String question; %>
+  <% String question_uid; %>
+  <% String answer; %>
+  <% String answer_uid; %>
+
+  <% String order_question; %>
+
+  <%-- 선언 끝 --%>
+
+
     <form action="#" method="get" class="border border-3 m-5 container">
-    <div class="container">
-      <p class="fs-2 mt-5">설문 페이지</p>
-      <p>(하나의 질문에 한 가지 답항만 선택 가능합니다.)</p>
-        <div>
-          <div>1. 현재 사용중인 제품을 선택해주세요.</div>
-          <div class="row container mb-3">
-          <div class="col-2 form-check">
-            <input
-              type="radio"
-              class="form-check-input"
-              name="radio01"
-              id="checked-radio"
-              value="1-1"
-            />
-            <label for="radio01" class="form-check-label"
-              >무선이어폰</label
-            >
-          </div>
-          <div class="col-2 form-check">
-            <input
-              type="radio"
-              class="form-check-input"
-              name="radio01"
-              id="checked-radio"
-              value="1-2"
-            />
-            <label for="radio01" class="form-check-label">헤드셋</label>
-          </div>
-          <div class="col-2 form-check">
-            <input
-              type="radio"
-              class="form-check-input"
-              name="radio01"
-              id="checked-radio"
-              
-              value="1-3"
-            />
-            <label for="radio01" class="form-check-label"
-              >유선이어폰</label
-            >
-            </div>
-            </div>
-        </div>
-          <div>
-            <div>2. 현재 사용중인 제품의 가격이 적당하다고 생각하십니까?</div>
-            <div class="row container mb-3">
-                <div class="col-2 form-check">
-                    <input
-                      type="radio"
-                      class="form-check-input"
-                      name="radio02"
-                      id="default-radio"
-                      value="2-1"
-                    />
-                    <label for="radio02" class="form-check-label"
-                      >전혀 아니다.</label
-                    >
-                  </div>
-            <div class="col-2 form-check">
-              <input
-                type="radio"
-                class="form-check-input"
-                name="radio02"
-                id="default-radio"
-                value="2-2"
-              />
-              <label for="radio02" class="form-check-label"
-                >아니다.</label
-              >
-            </div>
-            <div class="col-2 form-check">
-              <input
-                type="radio"
-                class="form-check-input"
-                name="radio02"
-                id="checked-radio"
-                value="2-3"
-              />
-              <label for="radio02" class="form-check-label">보통이다.</label>
-            </div>
-            <div class="col-2 form-check">
-              <input
-                type="radio"
-                class="form-check-input"
-                name="radio02"
-                id="checked-radio"
-                value="2-4"
-              />
-              <label for="radio02" class="form-check-label"
-                >그렇다.</label
-              >
-              </div>
-              <div class="col-2 form-check">
-                <input
-                  type="radio"
-                  class="form-check-input"
-                  name="radio02"
-                  id="checked-radio"
-                  value="2-5"
-                />
-                <label for="radio02" class="form-check-label"
-                  >매우 그렇다.</label
-                >
-                </div>
-          </div>
-          </div>
-          <div>
-            <div>3. 사용중인 제품의 음향은 만족스러우신가요?</div>
-            <div class="row container mb-3">
-                <div class="col-2 form-check">
-                    <input
-                      type="radio"
-                      class="form-check-input"
-                      name="radio03"
-                      id="default-radio"
-                      value="3-1"
-                    />
-                    <label for="radio03" class="form-check-label"
-                      >전혀 아니다.</label
-                    >
-                  </div>
-            <div class="col-2 form-check">
-              <input
-                type="radio"
-                class="form-check-input"
-                name="radio03"
-                id="default-radio"
-                value="3-2"
-              />
-              <label for="radio03" class="form-check-label"
-                >아니다.</label
-              >
-            </div>
-            <div class="col-2 form-check">
-              <input
-                type="radio"
-                class="form-check-input"
-                name="radio03"
-                id="checked-radio"
-                value="3-3"
-              />
-              <label for="radio03" class="form-check-label">보통이다.</label>
-            </div>
-            <div class="col-2 form-check">
-              <input
-                type="radio"
-                class="form-check-input"
-                name="radio03"
-                id="checked-radio"
-                value="3-4"
-              />
-              <label for="radio03" class="form-check-label"
-                >그렇다.</label
-              >
-              </div>
-              <div class="col-2 form-check">
-                <input
-                  type="radio"
-                  class="form-check-input"
-                  name="radio03"
-                  id="checked-radio"
-                  value="3-5"
-                />
-                <label for="radio03" class="form-check-label"
-                  >매우 그렇다.</label
-                >
-                </div>
-          </div>
-          </div>
-          <div>
-            <div>4. 사용중인 제품의 디자인은 만족스러우신가요?</div>
-            <div class="row container mb-3">
-                <div class="col-2 form-check">
-                    <input
-                      type="radio"
-                      class="form-check-input"
-                      name="radio04"
-                      id="default-radio"
-                      value="4-1"
-                    />
-                    <label for="radio04" class="form-check-label"
-                      >전혀 아니다.</label
-                    >
-                  </div>
-            <div class="col-2 form-check">
-              <input
-                type="radio"
-                class="form-check-input"
-                name="radio04"
-                id="default-radio"
-                value="4-2"
-              />
-              <label for="radio04" class="form-check-label"
-                >아니다.</label
-              >
-            </div>
-            <div class="col-2 form-check">
-              <input
-                type="radio"
-                class="form-check-input"
-                name="radio04"
-                id="checked-radio"
-                value="4-3"
-              />
-              <label for="radio04" class="form-check-label">보통이다.</label>
-            </div>
-            <div class="col-2 form-check">
-              <input
-                type="radio"
-                class="form-check-input"
-                name="radio04"
-                id="checked-radio"
-                value="4-4"
-              />
-              <label for="radio04" class="form-check-label"
-                >그렇다.</label
-              >
-              </div>
-              <div class="col-2 form-check">
-                <input
-                  type="radio"
-                  class="form-check-input"
-                  name="radio04"
-                  id="checked-radio"
-                  value="4-5"
-                />
-                <label for="radio04" class="form-check-label"
-                  >매우 그렇다.</label
-                >
-                </div>
-          </div>
-          </div>
-          <div>
-            <div>5. 사용중인 제품은 사용이 편리한가요?</div>
-            <div class="row container mb-3">
-                <div class="col-2 form-check">
-                    <input
-                      type="radio"
-                      class="form-check-input"
-                      name="radio05"
-                      id="checked-radio"
-                      value="5-1"
-                    />
-                    <label for="radio05" class="form-check-label"
-                      >전혀 아니다.</label
-                    >
-                  </div>
-            <div class="col-2 form-check">
-              <input
-                type="radio"
-                class="form-check-input"
-                name="radio05"
-                id="checked-radio"
-                value="5-2"
-              />
-              <label for="radio05" class="form-check-label"
-                >아니다.</label
-              >
-            </div>
-            <div class="col-2 form-check">
-              <input
-                type="radio"
-                class="form-check-input"
-                name="radio05"
-                id="checked-radio"
-                value="5-3"
-              />
-              <label for="radio05" class="form-check-label">보통이다.</label>
-            </div>
-            <div class="col-2 form-check">
-              <input
-                type="radio"
-                class="form-check-input"
-                name="radio05"
-                id="checked-radio"
-                value="5-4"
-              />
-              <label for="radio05" class="form-check-label"
-                >그렇다.</label
-              >
-              </div>
-              <div class="col-2 form-check">
-                <input
-                  type="radio"
-                  class="form-check-input"
-                  name="radio05"
-                  id="checked-radio"
-                  value="5-5"
-                />
-                <label for="radio05" class="form-check-label"
-                  >매우 그렇다.</label
-                >
-                </div>
-          </div>
-        </div>
+
+  <%-- 질문 출력 --%>
+   <div class="container" style="margin : 0% 30%">
+   <%-- 텍스트센터안되고있음 --%>
+   <div class="justify-content-center">
+   <p class="fs-2 mt-5">설문 페이지</p>
+   <p class="mb-5">(하나의 질문에 한 가지 답항만 선택 가능합니다.)</p>
+   <div>
+  <% for(int i=0; i<question_list.size(); i++) { %>
+  <% question_bundle = question_list.get(i); %>
+  <% question = (String)question_bundle.get("QUESTION"); %>
+  <% question_uid = (String)question_bundle.get("QUESTION_UID"); %>
+
+  <% order_question = (String)question_bundle.get("ORDERS"); %>
+  <div class="mb-3"> <%= order_question%>. <%= question %> </div>  
+  </div>
+<%-- 여기까지가 질문 --%>
+
+  <div>
+<%-- 1번질문일경우 이어폰 헤드셋 출력 --%>
+<% if(i==0){ %>
+
+ <% for(int j=5; j<answer_list.size(); j++) { %>  
+ <% answer_bundle = answer_list.get(j); %>
+ <% answer = (String)answer_bundle.get("ANSWER"); %>
+ <% answer_uid = (String)answer_bundle.get("ANSWER_UID"); %>
+ <input type="radio" class="form-check-input mb-5" name="<%= question_uid %>" value="<%= answer_uid %>" id="<%= question_uid + answer_uid %>">
+ <label for="<%= question_uid + answer_uid %>" class="form-check-label me-3"> <%= answer %> &nbsp</label>
+   <% } %>
+
+<% }else { %>
+<%-- 1번이 아닌경우/ 2번부터는 아니다 그렇다 출력 --%>
+  <% for(int j=0; j<answer_list.size()-3; j++) { %>  
+
+ <% answer_bundle = answer_list.get(j); %>
+ <% answer = (String)answer_bundle.get("ANSWER"); %>
+  <% answer_uid = (String)answer_bundle.get("ANSWER_UID"); %>
+ <%-- ID를 QUESTION의 UID로 맞춰서 같은 질문끼리 중복 선택 안되도록 --%>
+ <input type="radio" class="form-check-input mb-5" name="<%= question_uid %>" value="<%= answer_uid %>" id="<%= question_uid + answer_uid %>">
+ <label for="<%= question_uid + answer_uid %>" class="form-check-label me-3"> <%= answer %> &nbsp</label>
+  <% } %>
+  <% } %>
+  <% } %>
+  </div>
+
+  </div>
+  </div>
+<%-- 여기서 for 끝 --%>
+
         <div class="row mt-5">
             <div class="col-5"></div>
             <button type="submit" class="btn btn-primary mb-5 col-2">작성완료</button>
         </div>
-    </div>
-    </form>
-    </div>
+
+</form>
+
+
+
+
+
+
+<%-- ---------------------------------------------------------------------------------- --%>
+
     <div class="container-fluid p-4">
         <footer class="mt-5 opacity-75">
           <div>

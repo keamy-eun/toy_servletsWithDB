@@ -17,4 +17,6 @@ public class StaticsServlet extends HttpServlet{
      RequestDispatcher requestDispatcher = request.getRequestDispatcher("/statics.jsp");
      requestDispatcher.forward(request, response);
     }
+  
+
 }
