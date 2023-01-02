@@ -17,7 +17,6 @@
   </head>
   <body>
     <%@ include file= "header.jsp" %>
-
     <div class="container pt-5 pb-5 -primary">
       <!-- card -->
       <div class="card">

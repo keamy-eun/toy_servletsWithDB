@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -99,5 +99,6 @@
     ></script>
     <hr />
     <a href="./index.html" class="fs-5" target="_self">Index</a>
+    <%@ include file= "footer.jsp" %>
   </body>
 </html>

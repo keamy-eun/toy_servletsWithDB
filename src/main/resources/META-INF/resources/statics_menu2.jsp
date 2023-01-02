@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-pageEncoding="utf-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,19 +9,8 @@ pageEncoding="utf-8"%>
     <link rel="stylesheet" href="../CSS/statics_menu2.css" />
   </head>
   <body>
-    <div class="font-size-35px main-title">
-      <strong
-        ><div>이어폰 사용설문</div>
-        <div>및 통계시스템</div></strong
-      >
-    </div>
-    <div class="display-flex-row main-menu font-size-20px">
-      <div><a href="../html/main.html">HOME</a></div>
-      <div><a href="../html/statics.html">통계</a></div>
-      <div><a href="../html/survey.html">설문</a></div>
-      <div><a href="../html/login.html">로그인</a></div>
-      <div><a href="../html/signUp.html">회원가입</a></div>
-    </div>
+    <%@ include file= "header.jsp" %>
+
     <div class="div1">
       <table border="1" class="main-align">
         <tr>
@@ -81,5 +69,6 @@ pageEncoding="utf-8"%>
       </div>
       <div>Email address : anxi0015@gmail.com / eun.wonki014@gmail.com</div>
     </div>
+    <%@ include file= "footer.jsp" %>
   </body>
 </html>

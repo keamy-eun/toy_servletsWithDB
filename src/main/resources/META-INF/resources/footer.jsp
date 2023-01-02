@@ -22,11 +22,11 @@
         <footer class="mt-5 opacity-75">
           <div>
             Git address :
-            <a href="https://github.com/keamy-eun/html_ToyTermProject.git"
-              >github.com/keamy-eun/html_ToyTermProject.git</a
+            <a href="https://github.com/keamy-eun/toy_servletsWithDB"
+              >github.com/keamy-eun/toy_servletsWithDB.git</a
             >
           </div>
-          <div>Email address : anxi0015@gmail.com / eun.wonki014@gmail.com</div>
+          <div>Email address : anxi0015@gmail.com / eun.wonki014@gmail.com / jhun1020.kh@gmail.com</div>
         </footer>
       </div>
 
