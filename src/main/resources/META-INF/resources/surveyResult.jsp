@@ -36,6 +36,7 @@
           <a href="./surveyServlet" class="nav-link text-dark">설문</a>
           <a href="./login.jsp" class="nav-link text-dark">로그인</a>
           <a href="./signUp.jsp" class="nav-link text-dark">회원가입</a>
+           <a href="/AdminServlet" class="nav-link text-dark">관리자 페이지</a>
           <%-- login과 signup는  Webservlet 별칭이 없어 일단 jsp로 바로 연결되게 해둠--%>
         </nav>
     </div>
