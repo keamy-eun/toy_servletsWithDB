@@ -49,15 +49,6 @@
         </ul>
       </aside>
     </div>
-    <div class="padding-address">
-      <div>
-        Git address :
-        <a href="https://github.com/keamy-eun/html_ToyTermProject.git"
-          >https://github.com/keamy-eun/html_ToyTermProject.git</a
-        >
-      </div>
-      <div>Email address : anxi0015@gmail.com / eun.wonki014@gmail.com</div>
-    </div>
     <%@ include file= "footer.jsp" %>
   </body>
 </html>

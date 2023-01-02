@@ -104,25 +104,11 @@
 
 <%-- ---------------------------------------------------------------------------------- --%>
 
-    <div class="container-fluid p-4">
-        <footer class="mt-5 opacity-75">
-          <div>
-            Git address :
-            <a href="https://github.com/keamy-eun/html_ToyTermProject.git"
-              >github.com/keamy-eun/html_ToyTermProject.git</a
-            >
-          </div>
-          <div>Email address : anxi0015@gmail.com / eun.wonki014@gmail.com</div>
-        </footer>
-      </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <hr />
-    <a href="./index.html" class="fs-5" target="_self">Index</a>
     <%@ include file= "footer.jsp" %>
   </body>
 </html>
