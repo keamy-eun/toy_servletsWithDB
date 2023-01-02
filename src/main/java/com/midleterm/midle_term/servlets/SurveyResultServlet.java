@@ -1,9 +1,8 @@
 package com.midleterm.midle_term.servlets;
 import java.io.IOException;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+
 import java.sql.Statement;
-import java.util.ArrayList;
+
 
 import com.midleterm.midle_term.dao.Commons;
 
