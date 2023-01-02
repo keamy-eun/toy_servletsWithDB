@@ -1,6 +1,6 @@
 # 이어폰 관련 설문조사 및 통계 사이트
 
-<img src="https://github.com/keamy-eun/html_ToyTermProject/blob/master/docs/img/project_img.PNG?raw=true">
+<img src="https://user-images.githubusercontent.com/115060986/210193461-26ea107b-26f6-49c8-ba2b-5130b6c2d6b0.PNG">
 
 # 3차 프로잭트 내용: JSP & DB 활용 UI구현
 
