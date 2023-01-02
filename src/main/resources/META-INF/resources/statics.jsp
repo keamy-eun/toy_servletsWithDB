@@ -18,7 +18,7 @@
     <div class="container-fluid p-4">
       <div class="pb-2">
         <nav class="navbar navbar-light">
-          <a href="./main.jsp" class="fs-2 navbar-brand"
+          <a href="./Main" class="fs-2 navbar-brand"
             >이어폰 사용설문 및 통계시스템</a
           >
         </nav>
@@ -32,17 +32,16 @@
           <a href="./signUp.jsp" class="nav-link text-dark">회원가입</a>
         </nav>
       </div> --%>
-      <div class="fs-4 mt-4 mb-4">
+     <div class="fs-4 mt-4 mb-4">
         <nav class="nav d-flex justify-content-around ">
     
-          <a href="./main.jsp" class="nav-link text-dark">HOME</a>
+          <a href="./Main" class="nav-link text-dark">HOME</a>
 
           <span class="dropdown">
           <a href="./staticsServlet" class="nav-link text-dark dropdown-toggle" data-bs-toggle="dropdown">통계</a>
            <div id="dropdownId" class="dropdown-menu">
               <a href="./Statics_menu1Servlet" class="dropdown-item">유/무선 이어폰 점유율</a>
               <a href="./Statics_menu2Servlet" class="dropdown-item">무선이어폰 업체별 점유율</a>
-              <a href="./surveyResultServlet" class="dropdown-item">설문자 통계</a>
            </div>
           </span>
           <a href="./surveyServlet" class="nav-link text-dark">설문</a>
@@ -50,8 +49,8 @@
           <a href="./signUp.jsp" class="nav-link text-dark">회원가입</a>
           <%-- login과 signup는  Webservlet 별칭이 없어 일단 jsp로 바로 연결되게 해둠--%>
         </nav>
-      </div>
     </div>
+
 
     <div class="row">
       <div class="col-9 text-center container">
@@ -92,7 +91,7 @@
         <div>Email address : anxi0015@gmail.com / eun.wonki014@gmail.com</div>
       </footer>
     </div>
-    <script
+       <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"

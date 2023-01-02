@@ -56,7 +56,7 @@ public class SurveyResultServlet extends HttpServlet{
 //   query = "INSERT INTO SURVEY_DATA(QUESTION_UID, ANSWER_UID, USER_UID) VALUES('"+question_uid_arrayList.get(i)+"', '"+result+"', '"+u_uid+"');";
 //   query += query;  
   
-}
+// }
 
 
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/surveyResult.jsp");
