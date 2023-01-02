@@ -51,7 +51,7 @@
 
 <div style="margin : 0% 10%">
 
-    <form action="/staticsServlet" method="get" class="border border-3 m-5 container">
+    <form action="/surveyResultServlet" method="post" class="border border-3 m-5 container">
 
   <%-- 질문 출력 --%>
    <div class="container" style="margin : 0% 30%">

@@ -42,6 +42,7 @@
            <div id="dropdownId" class="dropdown-menu">
               <a href="./Statics_menu1Servlet" class="dropdown-item">유/무선 이어폰 점유율</a>
               <a href="./Statics_menu2Servlet" class="dropdown-item">무선이어폰 업체별 점유율</a>
+              <a href="./surveyResultServlet" class="dropdown-item">설문자 통계</a>
            </div>
           </span>
           <a href="./surveyServlet" class="nav-link text-dark">설문</a>
