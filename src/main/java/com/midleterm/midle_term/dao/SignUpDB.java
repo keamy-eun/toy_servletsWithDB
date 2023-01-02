@@ -1,5 +1,6 @@
 package com.midleterm.midle_term.dao;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.HashMap;
@@ -29,4 +30,17 @@ public class SignUpDB {
             statement.executeUpdate(query);
         }
     }
+    public int getUserQuantity() throws SQLException{
+        Commons commons = new Commons();
+        Statement statement = commons.getStatement();
+        String query = "select count(*) from userdata;";
+        String userQuantity = "";
+        
+        ResultSet resultSet = statement.executeQuery(query);
+        while(resultSet.next()){
+            userQuantity = resultSet.getString("count(*)");
+        }
+        return Integer.parseInt(userQuantity);
+    }
+
 }
