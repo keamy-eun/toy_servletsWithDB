@@ -46,3 +46,17 @@ VALUES ('Q1', 'A6'),('Q1', 'A7'),('Q1', 'A8'),
 ('Q3', 'A1'),('Q3', 'A2'),('Q3', 'A3'),('Q3', 'A4'),('Q3', 'A5'),
 ('Q4', 'A1'),('Q4', 'A2'),('Q4', 'A3'),('Q4', 'A4'),('Q4', 'A5'),
 ('Q5', 'A1'),('Q5', 'A2'),('Q5', 'A3'),('Q5', 'A4'),('Q5', 'A5');
+
+
+
+--  -- --
+INSERT INTO SURVEY_DATA(QUESTION_UID, ANSWER_UID, USER_UID)
+VALUES ('Q1', 'A6', 'U1'), ('Q2','A2','U1'), ('Q3','A3','U1'), ('Q4','A2','U1'), ('Q5','A1','U1');
+INSERT INTO SURVEY_DATA(QUESTION_UID, ANSWER_UID, USER_UID)
+VALUES ('Q1', 'A6', 'U2'), ('Q2','A1','U2'), ('Q3','A1','U2'), ('Q4','A1','U2'), ('Q5','A1','U2');
+INSERT INTO SURVEY_DATA(QUESTION_UID, ANSWER_UID, USER_UID)
+VALUES ('Q1', 'A7', 'U3'), ('Q2','A5','U3'), ('Q3','A4','U3'), ('Q4','A5','U3'), ('Q5','A4','U3');
+INSERT INTO SURVEY_DATA(QUESTION_UID, ANSWER_UID, USER_UID)
+VALUES('Q1', 'A8', 'U4'), ('Q2','A3','U4'), ('Q3','A3','U4'), ('Q4','A4','U4'), ('Q5','A3','U4');
+INSERT INTO SURVEY_DATA(QUESTION_UID, ANSWER_UID, USER_UID)
+VALUES('Q1', 'A8', 'U5'), ('Q2','A4','U5'), ('Q3','A3','U5'), ('Q4','A4','U5'), ('Q5','A5','U5');
