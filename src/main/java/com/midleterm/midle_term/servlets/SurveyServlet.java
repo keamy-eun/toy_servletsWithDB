@@ -1,11 +1,14 @@
 package com.midleterm.midle_term.servlets;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import com.midleterm.midle_term.dao.AdminWithDB;
+import com.midleterm.midle_term.dao.Commons;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
@@ -31,8 +34,12 @@ public class SurveyServlet extends HttpServlet{
             answer_list = adminWithDB.getAns();
             // ArrayList<String> q_list = new ArrayList<>();
 
-        // // 디스플레이해서 확인
-        // PrintWriter printWriter = response.getWriter();
+
+            // --------------------------
+      
+
+
+
     
         // for(int i=0; i<question_list.size(); i++){
         //     HashMap<String, Object> question_bundle = question_list.get(i);
@@ -59,5 +66,11 @@ public class SurveyServlet extends HttpServlet{
 }
 
 
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // TODO Auto-generated method stub
+        this.doGet(req, resp);
     }
 }
