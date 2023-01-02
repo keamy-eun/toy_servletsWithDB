@@ -1,10 +1,8 @@
 package com.midleterm.midle_term.servlets;
 import java.io.IOException;
 
-import java.sql.Statement;
-
-
-import com.midleterm.midle_term.dao.Commons;
+// import java.sql.Statement;
+// import com.midleterm.midle_term.dao.Commons;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
@@ -18,8 +16,8 @@ public class SurveyResultServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        Commons commons = new Commons();
-        Statement statement = commons.getStatement();
+        // Commons commons = new Commons();
+        // Statement statement = commons.getStatement();
         
         
       

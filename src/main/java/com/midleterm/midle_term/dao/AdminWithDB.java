@@ -111,14 +111,14 @@ public class AdminWithDB {
     }
 
     
-    public ArrayList<HashMap> getQues() throws SQLException{
+    public ArrayList<HashMap<String, Object>> getQues() throws SQLException{
         Commons commons = new Commons();
         Statement statement = commons.getStatement();
 
         String query = "SELECT * FROM QUESTION_LIST;";  
         ResultSet resultSet = statement.executeQuery(query);
 
-        ArrayList<HashMap> question_list = new ArrayList<>();
+        ArrayList<HashMap<String, Object>> question_list = new ArrayList<>();
         HashMap<String, Object> question = null;
 
         while(resultSet.next()){
@@ -134,17 +134,17 @@ public class AdminWithDB {
         return question_list;
     }
 
-    public ArrayList<HashMap> getAns() throws SQLException{
+    public ArrayList<HashMap<String, Object>> getAns() throws SQLException{
         Commons commons = new Commons();
         Statement statement = commons.getStatement();
 
         String query = "SELECT * FROM ANSWER_LIST;";  
         ResultSet resultSet = statement.executeQuery(query);
-        ArrayList<HashMap> answer_list = new ArrayList<>();
+        ArrayList<HashMap<String, Object>> answer_list = new ArrayList<>();
         HashMap<String, Object> answer = null;
         
         while(resultSet.next()) {
-            answer = new HashMap<>();
+            answer = new HashMap<String, Object>();
             answer.put("ANSWER_UID", resultSet.getString("ANSWER_UID"));
             answer.put("ANSWER", resultSet.getString("ANSWER"));
             answer.put("ORDERS", resultSet.getString("ORDERS"));
