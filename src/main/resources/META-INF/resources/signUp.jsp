@@ -19,7 +19,7 @@
     <%@ include file= "header.jsp" %>
 
     <div class="container mt-5 pt-5 pb-5 pl-5 pr-5 card">
-      <form action="" method="get">
+      <form action="" method="post">
         <!-- title -->
         <div class="fs-3">회원가입</div>
         <!-- input-group -->
@@ -93,15 +93,15 @@
           <div class="col-sm-1">년</div>
           <div class="col-sm-2">
             <select name="birthdayMonth" id="" class="form-control">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
+              <option value="01">1</option>
+              <option value="02">2</option>
+              <option value="03">3</option>
+              <option value="04">4</option>
+              <option value="05">5</option>
+              <option value="06">6</option>
+              <option value="07">7</option>
+              <option value="08">8</option>
+              <option value="09">9</option>
               <option value="10">10</option>
               <option value="11">11</option>
               <option value="12">12</option>
@@ -110,15 +110,15 @@
           <div class="col-sm-1">월</div>
           <div class="col-sm-2">
             <select name="birthdayDay" id="" class="form-control">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
+              <option value="01">1</option>
+              <option value="02">2</option>
+              <option value="03">3</option>
+              <option value="04">4</option>
+              <option value="05">5</option>
+              <option value="06">6</option>
+              <option value="07">7</option>
+              <option value="08">8</option>
+              <option value="09">9</option>
               <option value="10">10</option>
               <option value="11">11</option>
               <option value="12">12</option>
@@ -190,7 +190,8 @@
         </div>
         <!-- btn -->
         <div class="d-flex justify-content-end">
-          <button type="submit" class="btn btn-primary w-25 mt-3">
+        
+          <button type="submit" onclick="alert('회원가입이 완료되었습니다!');" class="btn btn-primary w-25 mt-3">
             Sign UP
           </button>
         </div>

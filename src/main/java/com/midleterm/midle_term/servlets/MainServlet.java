@@ -17,5 +17,9 @@ public class MainServlet extends HttpServlet{
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/main.jsp");
         requestDispatcher.forward(request, response);
     }
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        this.doGet(request, response);
+    }
     
 }

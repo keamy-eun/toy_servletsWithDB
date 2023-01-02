@@ -25,17 +25,11 @@
             >이어폰 사용설문 및 통계시스템</a
           >
         </nav>
-        <%-- 로그인 했을때 환영문구 출력, 로그아웃버튼 --%> <% if
-        (session.getAttribute("NAME") != null) {%>
+        <%-- 로그인 했을때 환영문구 출력, 로그아웃버튼 --%>
+        <% if (session.getAttribute("NAME") != null) {%>
         <div class="d-flex justify-content-around">
-          <div>
-            <%= session.getAttribute("NAME") %> 회원님 환영합니다! &nbsp;&nbsp;
-          </div>
-          <div>
-            <a href="/Logout" class="" onclick="alert('로그아웃 되었습니다!');">
-              로그아웃</a
-            >
-          </div>
+        <div><%= session.getAttribute("NAME") %> 회원님 환영합니다! &nbsp;&nbsp;</div>
+        <div><a href="/Logout" class="" onclick="alert('로그아웃 되었습니다!');" > 로그아웃</a></div>
         </div>
         <% } %>
       </div>
@@ -44,7 +38,9 @@
           <a href="/Main" class="nav-link text-dark">HOME</a>
           <a href="/staticsServlet" class="nav-link text-dark">통계</a>
           <a href="/surveyServlet" class="nav-link text-dark">설문</a>
+          <% if (session.getAttribute("NAME") == null) {%>
           <a href="/Login" class="nav-link text-dark">로그인</a>
+          <% } %>
           <a href="/SignUp" class="nav-link text-dark">회원가입</a>
           <a href="/AdminServlet" class="nav-link text-dark">관리자 페이지</a>
         </nav>

@@ -22,5 +22,9 @@ public class Logout extends HttpServlet {
 
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/Main");
         requestDispatcher.forward(request, response);
+    }
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        this.doGet(request, response);
     }    
 }

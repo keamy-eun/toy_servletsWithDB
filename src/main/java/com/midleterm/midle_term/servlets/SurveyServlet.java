@@ -27,8 +27,8 @@ public class SurveyServlet extends HttpServlet{
   
         // 퀘스천 리스트에 리스트 형태로 담겨있는 맵들. question qiestion_uid orders
         try {
-        ArrayList<HashMap> question_list = new ArrayList<>();
-        ArrayList<HashMap> answer_list = new ArrayList<>();
+        ArrayList<HashMap<String, Object>> question_list = new ArrayList<>();
+        ArrayList<HashMap<String, Object>> answer_list = new ArrayList<>();
             question_list = adminWithDB.getQues();
             answer_list = adminWithDB.getAns();
             // ArrayList<String> q_list = new ArrayList<>();
