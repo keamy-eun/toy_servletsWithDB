@@ -15,26 +15,8 @@
     <link rel="stylesheet" href="./css/commons.css" />
   </head>
   <body>
-    <div class="container-fluid p-4">
-      <div class="pb-2">
-        <nav class="navbar navbar-light">
-          <a href="./Main" class="fs-2 navbar-brand"
-            >이어폰 사용설문 및 통계시스템</a
-          >
-        </nav>
-      </div>
-      <div class="fs-4 mt-4 mb-4">
-        <nav class="nav d-flex justify-content-around">
-          <a href="./Main" class="nav-link text-dark">HOME</a>
-          <a href="./staticsServlet" class="nav-link text-dark">통계</a>
-          <a href="./surveyServlet" class="nav-link text-dark">설문</a>
-          <a href="./login.jsp" class="nav-link text-dark">로그인</a>
-          <a href="./signUp.jsp" class="nav-link text-dark">회원가입</a>
-        </nav>
-      </div>
-
-
-
+     <%@ include file= "header.jsp" %>
+  
     <div class="row">
       <div class="col-9 text-center container">
         <div class="fs-2 mt-5">통계자료 화면입니다</div>
