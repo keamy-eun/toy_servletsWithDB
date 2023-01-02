@@ -19,7 +19,10 @@
     <%@ include file= "header.jsp" %>
     <div class="text-primary display-6 text-center pt-5">회원 목록 보기</div>
     <hr>
-    <% if(session.getAttribute("ID").equals("admin")){ %>
+    
+    <% if(session.getAttribute("ID")==null || !session.getAttribute("ID").equals("admin")){ %>
+      <div class="text-danger display-6 text-center pt-5">관리자만 접근할 수 있습니다.</div>
+      <% } else if(session.getAttribute("ID").equals("admin")){ %>
       <div class="container ms-1 p-2 pb-3">
         <a href="/AdminServlet?editUser=t&insert=t&update=f" class="btn btn-default btn-lg btn-success"
           ><span class="glyphicon glyphicon-user"></span>Add New User</a
@@ -76,9 +79,7 @@
         </tbody>
       </table>
       </div>
-      <% } else {%>
-        <div class="text-danger display-6 text-center pt-5">관리자만 접근할 수 있습니다.</div>
-        <% }%>
+      <% }%>
     
     <%@ include file= "footer.jsp" %>
   </body>
