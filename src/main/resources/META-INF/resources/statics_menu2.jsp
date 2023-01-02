@@ -48,12 +48,12 @@
       <aside>
         <ul>
           <li>
-            <a href="./statics_menu1.html" target="_self"
+            <a href="./statics_menu1.jsp" target="_self"
               >유/무선 이어폰 점유율
             </a>
           </li>
           <li>
-            <a href="./statics_menu2.html" target="_self"
+            <a href="./statics_menu2.jsp" target="_self"
               >무선이어폰 업체별 점유율
             </a>
           </li>
