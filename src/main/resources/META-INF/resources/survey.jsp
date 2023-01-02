@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.HashMap, java.util.ArrayList" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,23 +16,7 @@
     <link rel="stylesheet" href="./css/commons.css" />
   </head>
   <body>
-    <div class="container-fluid p-4">
-        <div class="pb-2">
-            <nav class="navbar navbar-light">
-              <a href="./main.html" class="fs-2 navbar-brand">이어폰 사용설문 및 통계시스템</a>
-            </nav>
-          </div>
-          <div class="fs-4 mt-4 mb-4">
-            <nav class="nav d-flex justify-content-around">
-                <a href="./main.html" class="nav-link text-dark">HOME</a>
-                <a href="./staticsServlet" class="nav-link text-dark">통계</a>
-                <a href="./surveyServlet" class="nav-link text-dark">설문</a>
-                <a href="./login.html" class="nav-link text-dark">로그인</a>
-                <a href="./signUp.html" class="nav-link text-dark">회원가입</a>
-              </nav>
-          </div>
-        </div>
-
+    <%@ include file= "header.jsp" %>
   
   <% ArrayList<HashMap> question_list =  (ArrayList<HashMap>)request.getAttribute("question_list"); %>
   <% ArrayList<HashMap> answer_list =  (ArrayList<HashMap>)request.getAttribute("answer_list"); %>
@@ -139,5 +123,6 @@
     ></script>
     <hr />
     <a href="./index.html" class="fs-5" target="_self">Index</a>
+    <%@ include file= "footer.jsp" %>
   </body>
 </html>

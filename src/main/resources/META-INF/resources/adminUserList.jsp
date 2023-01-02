@@ -1,6 +1,5 @@
 <%@ page import="java.util.HashMap, java.util.ArrayList, java.sql.PreparedStatement, java.sql.DriverManager, java.sql.Connection, java.sql.Statement, java.sql.ResultSet, java.sql.SQLException" %> 
-<%@ page
-language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +16,7 @@ language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
   />
   </head>
   <body>
+    <%@ include file= "header.jsp" %>
     <div class="text-primary display-6 text-center pt-5">회원 목록 보기</div>
     <hr>
     <div class="container ms-1 p-2 pb-3">
@@ -75,5 +75,6 @@ language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
       </tbody>
     </table>
     </div>
+    <%@ include file= "footer.jsp" %>
   </body>
 </html>

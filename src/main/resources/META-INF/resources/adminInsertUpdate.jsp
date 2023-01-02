@@ -1,6 +1,5 @@
 <%@ page import="java.util.HashMap, java.util.ArrayList, java.sql.PreparedStatement, java.sql.DriverManager, java.sql.Connection, java.sql.Statement, java.sql.ResultSet, java.sql.SQLException" %> 
-<%@ page
-language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +16,12 @@ language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
   />
   </head>
   <body>
-    <div class="text-primary display-5 text-center pt-5">회원 목록 보기</div>
+    <%@ include file= "header.jsp" %>
+    <% if(request.getParameter("USER_UID") == null){ %>
+      <div class="text-primary display-6 text-center pt-5">신규 회원 설정</div>
+    <% } else if(request.getParameter("update").equals("t")){ %>
+      <div class="text-primary display-6 text-center pt-5">회원 정보 수정</div>
+      <% }%>
     <hr>
     <% ArrayList<HashMap<String, Object>> userList = (ArrayList<HashMap<String, Object>>)request.getAttribute("getUserList"); %>
       <div class="container-fluid">
@@ -146,7 +150,8 @@ language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
           </tbody>
         </table>
         <div class="container d-flex justify-content-end align-items-end">
-          <a href="/AdminServlet?" class="btn btn-primary-gray-base " style="text-decoration:none">Prev</a></button></td>
+          <a href="/AdminServlet?" class="btn btn-primary" style="text-decoration:none">Prev</a></button></td>
         </div>
+        <%@ include file= "footer.jsp" %>
   </body>
 </html>
