@@ -17,6 +17,7 @@
   </head>
   <body>
     <%@ include file= "header.jsp" %>
+
     <div class="container pt-5 pb-5 -primary">
       <!-- card -->
       <div class="card">
@@ -28,7 +29,7 @@
           />
         </div>
         <div class="card-body">
-          <form action="" method="get">
+          <form action="" method="post">
             <!-- login menu title -->
             <div class="text-center fs-1">LOGIN</div>
             <!-- input group -->
