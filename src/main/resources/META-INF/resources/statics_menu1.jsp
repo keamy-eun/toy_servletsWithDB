@@ -17,8 +17,8 @@
   <body>
     <%@ include file= "header.jsp" %>
 
-    <div class="div1">
-      <table border="1" class="main-align">
+    <div class="div1 row">
+      <table border="1" class="main-align col-5">
         <div>
           <tr>
             <th colspan="3">유/무선 이어폰 사용량 증감 추이</th>
@@ -40,21 +40,24 @@
           </tr>
         </div>
       </table>
-      <aside>
-        <ul>
-          <li>
-            <a href="./statics_menu1.jsp" target="_self"
-              >유/무선 이어폰 점유율
-            </a>
-          </li>
-          <li>
-            <a href="./statics_menu2.jsp" target="_self"
-              >무선이어폰 업체별 점유율
-            </a>
-          </li>
-        </ul>
-      </aside>
-    </div>
+
+      <nav class="col col-md-2 col-lg-2 navbar bg-primary navbar-primary h-50 fs-5 rounded me-5">
+       <div class="navbar-nav">
+          <ul style="width : 250px">
+            <li>
+              <a href="./Statics_menu1Servlet" class="nav-link"
+                ><div>유/무선</div> <div>이어폰 점유율</div></a
+              >
+            </li>
+            <li>
+              <a href="./Statics_menu2Servlet" class="nav-link"
+                ><div>무선이어폰</div> 업체별 점유율</a
+              >
+            </li>
+          </ul>
+        </div>
+    </nav>
+     </div>
     <%@ include file= "footer.jsp" %>
      <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

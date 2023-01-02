@@ -62,7 +62,11 @@
  <% answer_bundle = answer_list.get(j); %>
  <% answer = (String)answer_bundle.get("ANSWER"); %>
  <% answer_uid = (String)answer_bundle.get("ANSWER_UID"); %>
+  <% if(j==5){ %>
+<input type="radio" class="form-check-input mb-5" name="<%= question_uid %>" value="<%= answer_uid %>" id="<%= question_uid + answer_uid %>" checked>
+  <% } else{ %>
  <input type="radio" class="form-check-input mb-5" name="<%= question_uid %>" value="<%= answer_uid %>" id="<%= question_uid + answer_uid %>">
+   <% } %>
  <label for="<%= question_uid + answer_uid %>" class="form-check-label me-3"> <%= answer %> &nbsp</label>
    <% } %>
 
@@ -74,7 +78,11 @@
  <% answer = (String)answer_bundle.get("ANSWER"); %>
   <% answer_uid = (String)answer_bundle.get("ANSWER_UID"); %>
  <%-- ID를 QUESTION의 UID로 맞춰서 같은 질문끼리 중복 선택 안되도록 --%>
- <input type="radio" class="form-check-input mb-5" name="<%= question_uid %>" value="<%= answer_uid %>" id="<%= question_uid + answer_uid %>">
+  <% if(j==0){ %>
+   <input type="radio" class="form-check-input mb-5" name="<%= question_uid %>" value="<%= answer_uid %>" id="<%= question_uid + answer_uid %>" checked>
+   <% } else{ %>
+   <input type="radio" class="form-check-input mb-5" name="<%= question_uid %>" value="<%= answer_uid %>" id="<%= question_uid + answer_uid %>">
+  <% } %>
  <label for="<%= question_uid + answer_uid %>" class="form-check-label me-3"> <%= answer %> &nbsp</label>
   <% } %>
   <% } %>
