@@ -92,7 +92,7 @@
             <div class="col-5"></div>
             <button type="submit" class="btn btn-primary mb-5 col-2" 
             onclick="if(confirm('제출하시겠습니까?')) return true; 
-                      else return false;">작성완료</button>
+                      else return false;">작성 완료</button>
         </div>
 
 </form>
