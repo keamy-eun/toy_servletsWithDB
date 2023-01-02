@@ -17,7 +17,6 @@
   <body>
     <%@ include file= "header.jsp" %> <%-- login과 signup는 Webservlet 별칭이
     없어 일단 jsp로 바로 연결되게 해둠--%>
-
     <div class="row">
       <div class="col-9 text-center container">
         <div class="fs-2 mt-5">통계자료 화면입니다</div>
