@@ -47,8 +47,7 @@
     <div>
 <%-- 하드코딩으로 일단 해결해두자 --%>
   <% 
- 
-  String q1 = request.getParameter("Q1"); //62232
+   String q1 = request.getParameter("Q1"); //62232
   String q2 = request.getParameter("Q2");
   String q3 = request.getParameter("Q3");
   String q4 = request.getParameter("Q4");
@@ -70,6 +69,8 @@
   int a8_q41 = 0, a8_q42 = 0, a8_q43 = 0, a8_q44 = 1, a8_q45 = 0;
   int a8_q51 = 0, a8_q52 = 0, a8_q53 = 0, a8_q54 = 0, a8_q55 = 1;
   %> 
+
+
   <% 
       if(q1.equals("A6")){
      // 무선이어폰 질문 2
@@ -152,23 +153,27 @@
       else if(q5.equals("A5")) a8_q55++;
     }
   
+
     %> 
-      <div style="margin : 5% 20%">
+
+
+
+<div style="margin : 5% 20%">
        <table class="table text-center mt-3" border="3">
         <tr class="bg-primary bg-opacity-25">
           <th colspan="6">무선이어폰</th>
         </tr>
         <tr>
           <th>질문</th>
-          <th>답변 1</th>
-          <th>답변 2</th>
-          <th>답변 3</th>
-          <th>답변 4</th>
-          <th>답변 5</th>
+          <th>전혀 아니다</th>
+          <th>아니다</th>
+          <th>보통이다</th>
+          <th>그렇다</th>
+          <th>매우 그렇다</th>
         </tr>
 
         <tr>
-          <td>질문 2</td>
+          <td>현재 사용중인 제품의 가격이 적당하다고 생각하십니까?</td>
           <td> <%= a6_q21 %> </td> 
           <td> <%= a6_q22 %> </td>
           <td> <%= a6_q23 %> </td>
@@ -176,7 +181,7 @@
           <td> <%= a6_q25 %> </td>
         </tr>
         <tr>
-          <th>질문 3</th>
+          <td>사용중인 제품의 음향은 만족스러우신가요?</td>
           <td><%= a6_q31 %></td>
           <td><%= a6_q32 %></td>
           <td><%= a6_q33 %></td>
@@ -184,7 +189,7 @@
           <td><%= a6_q35 %></td>
         </tr>
         <tr>
-          <th>질문 4</th>
+          <td>사용중인 제품의 음향은 만족스러우신가요?</td>
           <td><%= a6_q41 %></td>
           <td><%= a6_q42 %></td>
           <td><%= a6_q43 %></td>
@@ -192,7 +197,7 @@
           <td><%= a6_q45 %></td>
         </tr>
         <tr>
-          <th>질문 5</th>
+          <td>사용중인 제품은 사용이 편리한가요?</td>
           <td><%= a6_q51 %></td>
           <td><%= a6_q52 %></td>
           <td><%= a6_q53 %></td>
@@ -210,15 +215,15 @@
         </tr>
         <tr>
           <th>질문</th>
-          <th>답변 1</th>
-          <th>답변 2</th>
-          <th>답변 3</th>
-          <th>답변 4</th>
-          <th>답변 5</th>
+          <th>전혀 아니다</th>
+          <th>아니다</th>
+          <th>보통이다</th>
+          <th>그렇다</th>
+          <th>매우 그렇다</th>
         </tr>
 
         <tr>
-          <td>질문 2</td>
+          <td>현재 사용중인 제품의 가격이 적당하다고 생각하십니까?</td>
           <td> <%= a7_q31 %> </td>
           <td> <%= a7_q32 %> </td>
           <td> <%= a7_q33 %> </td>
@@ -226,7 +231,7 @@
           <td> <%= a7_q35 %> </td>
         </tr>
         <tr>
-          <td>질문 3</td>
+          <td>사용중인 제품의 음향은 만족스러우신가요?</td>
           <td> <%= a7_q31 %> </td>
           <td> <%= a7_q32 %> </td>
           <td> <%= a7_q33 %> </td>
@@ -234,7 +239,7 @@
           <td> <%= a7_q35 %> </td>
         </tr>
         <tr>
-          <td>질문 4</td>
+          <td>사용중인 제품의 디자인은 만족스러우신가요?</td>
           <td> <%= a7_q41 %> </td>
           <td> <%= a7_q42 %> </td>
           <td> <%= a7_q43 %> </td>
@@ -242,7 +247,7 @@
           <td> <%= a7_q45 %> </td>
         </tr>
         <tr>
-          <td>질문 5</td>
+          <td>사용중인 제품은 사용이 편리한가요?</td>
           <td> <%= a7_q51 %> </td>
           <td> <%= a7_q52 %> </td>
           <td> <%= a7_q53 %> </td>
@@ -260,15 +265,15 @@
         </tr>
         <tr>
           <th>질문</th>
-          <th>답변 1</th>
-          <th>답변 2</th>
-          <th>답변 3</th>
-          <th>답변 4</th>
-          <th>답변 5</th>
+          <th>전혀 아니다</th>
+          <th>아니다</th>
+          <th>보통이다</th>
+          <th>그렇다</th>
+          <th>매우 그렇다</th>
         </tr>
 
         <tr>
-          <td>질문 2</td>
+          <td>현재 사용중인 제품의 가격이 적당하다고 생각하십니까?</td>
           <td> <%= a8_q21 %> </td>
           <td> <%= a8_q22 %> </td>
           <td> <%= a8_q23 %> </td>
@@ -276,7 +281,7 @@
           <td> <%= a8_q25 %> </td>
         </tr>
         <tr>
-          <td>질문 3</td>
+          <td>사용중인 제품의 음향은 만족스러우신가요?</td>
           <td> <%= a8_q31 %> </td>
           <td> <%= a8_q32 %> </td>
           <td> <%= a8_q33 %> </td>
@@ -284,7 +289,7 @@
           <td> <%= a8_q35 %> </td>
         </tr>
         <tr>
-          <td>질문 4</td>
+          <td>사용중인 제품의 디자인은 만족스러우신가요?</td>
           <td> <%= a8_q41 %> </td>
           <td> <%= a8_q42 %> </td>
           <td> <%= a8_q43 %> </td>
@@ -292,7 +297,7 @@
           <td> <%= a8_q45 %> </td>
         </tr>
         <tr>
-          <td>질문 5</td>
+          <td>사용중인 제품은 사용이 편리한가요?</td>
           <td> <%= a8_q51 %> </td>
           <td> <%= a8_q52 %> </td>
           <td> <%= a8_q53 %> </td>
