@@ -220,7 +220,7 @@
        </table>
       </div>
 
-      <div style="margin : 5% 20%">
+      <%-- <div style="margin : 5% 20%">
        <table class="table text-center" border="3">
         <tr class="bg-primary bg-opacity-25">
           <th colspan="6">헤드셋</th>
@@ -287,7 +287,7 @@
       
       <div style="margin : 0% 20%">
        <table class="table text-center" border="3">
-       <tr class="bg-primary bg-opacity-25">
+        <tr class="bg-primary bg-opacity-25">
           <th colspan="6">유선이어폰</th>
         </tr>
         <tr>
@@ -348,7 +348,7 @@
           <td>n명</td>
         </tr>
        </table>
-      </div>
+      </div> --%>
 
     </div>   <%-- 여기까지 table  --%>
 
