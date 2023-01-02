@@ -1,5 +1,11 @@
 package com.midleterm.midle_term.servlets;
 import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+
+import com.midleterm.midle_term.dao.Commons;
 
 // import java.sql.Statement;
 // import com.midleterm.midle_term.dao.Commons;
@@ -16,21 +22,40 @@ public class SurveyResultServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        // Commons commons = new Commons();
-        // Statement statement = commons.getStatement();
-        
-        
-      
-//   // getParameter로 받은 값들을 list에 입력
-//   ArrayList<String> survey_result = new ArrayList<>();
-//   survey_result.add(request.getParameter("Q1"));
-//   survey_result.add(request.getParameter("Q2"));
-//   survey_result.add(request.getParameter("Q3"));
-//   survey_result.add(request.getParameter("Q4"));
-//   survey_result.add(request.getParameter("Q5"));
 
-//   String query = "";
-//   String result;
+        Commons commons = new Commons();
+        Statement statement = commons.getStatement();
+        
+        try {
+
+  // getParameter로 받은 값들을 list에 입력
+  ArrayList<String> survey_result = new ArrayList<>();
+  survey_result.add(request.getParameter("Q1"));
+  survey_result.add(request.getParameter("Q2"));
+  survey_result.add(request.getParameter("Q3"));
+  survey_result.add(request.getParameter("Q4"));
+  survey_result.add(request.getParameter("Q5"));
+
+  String query = "";
+  String q_uid = "";
+  String a_uid = "";
+
+  for(int i=0; i<survey_result.size(); i++){
+    q_uid = "Q" + (i+1);
+    a_uid = survey_result.get(i);                                      // user uid는 로그인 하드코딩으로 넘어가니 유형을 맞춰둠  이후에 
+                                                                    // 이후에 수정 필요
+    query = "INSERT INTO SURVEY_DATA(QUESTION_UID, ANSWER_UID, USER_UID) VALUES ('"+q_uid+"', '"+a_uid+"', 'U6');";
+    statement.executeUpdate(query);
+      }
+
+
+
+        } catch (SQLException e) {
+        
+            e.printStackTrace();
+        }
+      
+
 
 // //   question_uid 받아오기
 // ArrayList<String> question_uid_arrayList = new ArrayList<>();
