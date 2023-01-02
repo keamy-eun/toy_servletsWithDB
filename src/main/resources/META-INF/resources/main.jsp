@@ -20,10 +20,10 @@
       <%@ include file= "header.jsp" %>
 
       <!-- main -->
-      <div class="contain p-4">
+      <div class="contain p-1 d-flex justify-content-center">
         <img
-          class="rounded w-100"
-          src="https://newsroom-prd-data.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2019/10/%EC%99%84%EC%A0%84%EB%AC%B4%EC%84%A0_%EC%9D%B4%EC%96%B4%ED%8F%B0_%EB%B2%84%EC%A6%88_%EC%97%90%EC%96%B4%ED%8C%9F_1.jpg"
+          class="mt-1 rounded w-75"
+          src="https://user-images.githubusercontent.com/115060986/210201437-8c8da087-0d2c-419b-9ed2-23b7d25da728.jpg"
           alt=""
         />
       </div>
