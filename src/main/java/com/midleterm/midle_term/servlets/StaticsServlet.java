@@ -26,7 +26,7 @@ public class StaticsServlet extends HttpServlet{
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // TODO Auto-generated method stub
+    
         this.doGet(req, resp);
     }
 

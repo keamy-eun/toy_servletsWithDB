@@ -60,7 +60,7 @@ public class SurveyServlet extends HttpServlet{
 
 
 } catch (SQLException e) {
-    // TODO Auto-generated catch block
+ 
     e.printStackTrace();
 }
 
@@ -69,7 +69,7 @@ public class SurveyServlet extends HttpServlet{
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // TODO Auto-generated method stub
+     
         this.doGet(req, resp);
     }
 }
