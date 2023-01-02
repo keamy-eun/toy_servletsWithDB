@@ -48,36 +48,113 @@
     <div>
 <%-- 하드코딩으로 일단 해결해두자 --%>
   <% 
+  if(request.getParameter("Q1")!=null) {
   String q1 = request.getParameter("Q1"); //62232
   String q2 = request.getParameter("Q2");
   String q3 = request.getParameter("Q3");
   String q4 = request.getParameter("Q4");
   String q5 = request.getParameter("Q5");
-  int a6_q21 = 0;
-  int a6_q22 = 0;
-  int a6_q23 = 0;
-  int a6_q24 = 0;
-  int a6_q25 = 0;
-  int a6_q31 = 0;
-  int a6_q32 = 0;
-  int a6_q33 = 0;
-  int a6_q34 = 0;
-  int a6_q35 = 0;
+ 
+  // 무선이어폰
+  int a6_q21 = 0, a6_q22 = 0, a6_q23 = 0, a6_q24 = 0, a6_q25 = 0;
+  int a6_q31 = 0, a6_q32 = 0, a6_q33 = 0, a6_q34 = 0, a6_q35 = 0;
+  int a6_q41 = 0, a6_q42 = 0, a6_q43 = 0, a6_q44 = 0, a6_q45 = 0;
+  int a6_q51 = 0, a6_q52 = 0, a6_q53 = 0, a6_q54 = 0, a6_q55 = 0;
+ // 헤드셋
+  int a7_q21 = 0, a7_q22 = 0, a7_q23 = 0, a7_q24 = 0, a7_q25 = 0;
+  int a7_q31 = 0, a7_q32 = 0, a7_q33 = 0, a7_q34 = 0, a7_q35 = 0;
+  int a7_q41 = 0, a7_q42 = 0, a7_q43 = 0, a7_q44 = 0, a7_q45 = 0;
+  int a7_q51 = 0, a7_q52 = 0, a7_q53 = 0, a7_q54 = 0, a7_q55 = 0;
+ //유선이어폰
+  int a8_q21 = 0, a8_q22 = 0, a8_q23 = 0, a8_q24 = 0, a8_q25 = 0;
+  int a8_q31 = 0, a8_q32 = 0, a8_q33 = 0, a8_q34 = 0, a8_q35 = 0;
+  int a8_q41 = 0, a8_q42 = 0, a8_q43 = 0, a8_q44 = 0, a8_q45 = 0;
+  int a8_q51 = 0, a8_q52 = 0, a8_q53 = 0, a8_q54 = 0, a8_q55 = 0;
+
   %> 
-  <% if(q1.equals("A6")){
+  <% 
+      if(q1.equals("A6")){
+     // 무선이어폰 질문 2
       if(q2.equals("A1")) a6_q21++;
       else if(q2.equals("A2")) a6_q22++;
       else if(q2.equals("A3")) a6_q23++;
       else if(q2.equals("A4")) a6_q24++;
       else if(q2.equals("A5")) a6_q25++;
-
+     //질문 3
       if(q3.equals("A1")) a6_q31++;
-      else if(q2.equals("A2")) a6_q32++;
-      else if(q2.equals("A3")) a6_q33++;
-      else if(q2.equals("A4")) a6_q34++;
-      else if(q2.equals("A5")) a6_q35++;
-      
-  } %> 
+      else if(q3.equals("A2")) a6_q32++;
+      else if(q3.equals("A3")) a6_q33++;
+      else if(q3.equals("A4")) a6_q34++;
+      else if(q3.equals("A5")) a6_q35++;
+      //질문 4
+      if(q4.equals("A1")) a6_q41++;
+      else if(q4.equals("A2")) a6_q42++;
+      else if(q4.equals("A3")) a6_q43++;
+      else if(q4.equals("A4")) a6_q44++;
+      else if(q4.equals("A5")) a6_q45++;
+      //질문 5 
+      if(q5.equals("A1")) a6_q41++;
+      else if(q5.equals("A2")) a6_q52++;
+      else if(q5.equals("A3")) a6_q53++;
+      else if(q5.equals("A4")) a6_q54++;
+      else if(q5.equals("A5")) a6_q55++;
+    }
+
+          if(q1.equals("A7")){
+     // 헤드셋 질문 2
+      if(q2.equals("A1")) a7_q21++;
+      else if(q2.equals("A2")) a7_q22++;
+      else if(q2.equals("A3")) a7_q23++;
+      else if(q2.equals("A4")) a7_q24++;
+      else if(q2.equals("A5")) a7_q25++;
+     //질문 3
+      if(q3.equals("A1")) a7_q31++;
+      else if(q3.equals("A2")) a7_q32++;
+      else if(q3.equals("A3")) a7_q33++;
+      else if(q3.equals("A4")) a7_q34++;
+      else if(q3.equals("A5")) a7_q35++;
+      //질문 4
+      if(q4.equals("A1")) a7_q41++;
+      else if(q4.equals("A2")) a7_q42++;
+      else if(q4.equals("A3")) a7_q43++;
+      else if(q4.equals("A4")) a7_q44++;
+      else if(q4.equals("A5")) a7_q45++;
+      //질문 5 
+      if(q5.equals("A1")) a7_q41++;
+      else if(q5.equals("A2")) a7_q52++;
+      else if(q5.equals("A3")) a7_q53++;
+      else if(q5.equals("A4")) a7_q54++;
+      else if(q5.equals("A5")) a7_q55++;
+    }
+
+           if(q1.equals("A8")){
+      //유선이어폰 질문 2
+      if(q2.equals("A1")) a8_q21++;
+      else if(q2.equals("A2")) a8_q22++;
+      else if(q2.equals("A3")) a8_q23++;
+      else if(q2.equals("A4")) a8_q24++;
+      else if(q2.equals("A5")) a8_q25++;
+     //질문 3
+      if(q3.equals("A1")) a8_q31++;
+      else if(q3.equals("A2")) a8_q32++;
+      else if(q3.equals("A3")) a8_q33++;
+      else if(q3.equals("A4")) a8_q34++;
+      else if(q3.equals("A5")) a8_q35++;
+      //질문 4
+      if(q4.equals("A1")) a8_q41++;
+      else if(q4.equals("A2")) a8_q42++;
+      else if(q4.equals("A3")) a8_q43++;
+      else if(q4.equals("A4")) a8_q44++;
+      else if(q4.equals("A5")) a8_q45++;
+      //질문 5 
+      if(q5.equals("A1")) a8_q41++;
+      else if(q5.equals("A2")) a8_q52++;
+      else if(q5.equals("A3")) a8_q53++;
+      else if(q5.equals("A4")) a8_q54++;
+      else if(q5.equals("A5")) a8_q55++;
+    }
+  } 
+    %> 
       <div style="margin : 5% 20%">
        <table class="table text-center mt-3" border="3">
         <tr class="bg-primary bg-opacity-25">
@@ -102,27 +179,27 @@
         </tr>
         <tr>
           <th>질문 3</th>
-          <td><%= a6_q21 %></td>
-          <td><%= a6_q21 %></td>
-          <td><%= a6_q21 %></td>
-          <td><%= a6_q21 %></td>
-          <td><%= a6_q21 %></td>
+          <td><%= a6_q31 %></td>
+          <td><%= a6_q32 %></td>
+          <td><%= a6_q33 %></td>
+          <td><%= a6_q34 %></td>
+          <td><%= a6_q35 %></td>
         </tr>
         <tr>
           <th>질문 4</th>
-          <td>1</td>
-          <td>2</td>
-          <td>1</td>
-          <td>1</td>
-          <td>2</td>
+          <td><%= a6_q41 %></td>
+          <td><%= a6_q42 %></td>
+          <td><%= a6_q43 %></td>
+          <td><%= a6_q44 %></td>
+          <td><%= a6_q45 %></td>
         </tr>
         <tr>
           <th>질문 5</th>
-          <td>1</td>
-          <td>2</td>
-          <td>1</td>
-          <td>1</td>
-          <td>2</td>
+          <td><%= a6_q51 %></td>
+          <td><%= a6_q52 %></td>
+          <td><%= a6_q53 %></td>
+          <td><%= a6_q54 %></td>
+          <td><%= a6_q55 %></td>
         </tr>
         <tr>
           <th>총 계</th>
@@ -156,45 +233,38 @@
           <th>답변 4</th>
           <th>답변 5</th>
         </tr>
-        <tr>
-          <th>질문 1</th>
-          <td>1</td>
-          <td>2</td>
-          <td>1</td>
-          <td>1</td>
-          <td>2</td>
-        </tr>
+
         <tr>
           <th>질문 2</th>
-          <td>1</td>
-          <td>2</td>
-          <td>1</td>
-          <td>1</td>
-          <td>2</td>
+          <th> <%= a7_q31 %> </th>
+          <th> <%= a7_q32 %> </th>
+          <th> <%= a7_q33 %> </th>
+          <th> <%= a7_q34 %> </th>
+          <th> <%= a7_q35 %> </th>
         </tr>
         <tr>
           <th>질문 3</th>
-          <td>1</td>
-          <td>2</td>
-          <td>1</td>
-          <td>1</td>
-          <td>2</td>
+          <th> <%= a7_q31 %> </th>
+          <th> <%= a7_q32 %> </th>
+          <th> <%= a7_q33 %> </th>
+          <th> <%= a7_q34 %> </th>
+          <th> <%= a7_q35 %> </th>
         </tr>
         <tr>
           <th>질문 4</th>
-          <td>1</td>
-          <td>2</td>
-          <td>1</td>
-          <td>1</td>
-          <td>2</td>
+          <th> <%= a7_q41 %> </th>
+          <th> <%= a7_q42 %> </th>
+          <th> <%= a7_q43 %> </th>
+          <th> <%= a7_q44 %> </th>
+          <th> <%= a7_q45 %> </th>
         </tr>
         <tr>
           <th>질문 5</th>
-          <td>1</td>
-          <td>2</td>
-          <td>1</td>
-          <td>1</td>
-          <td>2</td>
+          <th> <%= a7_q51 %> </th>
+          <th> <%= a7_q52 %> </th>
+          <th> <%= a7_q53 %> </th>
+          <th> <%= a7_q54 %> </th>
+          <th> <%= a7_q55 %> </th>
         </tr>
         <tr>
           <th>총 계</th>
@@ -228,45 +298,38 @@
           <th>답변 4</th>
           <th>답변 5</th>
         </tr>
-        <tr>
-          <th>질문 1</th>
-          <td>1</td>
-          <td>2</td>
-          <td>1</td>
-          <td>1</td>
-          <td>2</td>
-        </tr>
+
         <tr>
           <th>질문 2</th>
-          <td>1</td>
-          <td>2</td>
-          <td>1</td>
-          <td>1</td>
-          <td>2</td>
+          <th> <%= a8_q21 %> </th>
+          <th> <%= a8_q22 %> </th>
+          <th> <%= a8_q23 %> </th>
+          <th> <%= a8_q24 %> </th>
+          <th> <%= a8_q25 %> </th>
         </tr>
         <tr>
           <th>질문 3</th>
-          <td>1</td>
-          <td>2</td>
-          <td>1</td>
-          <td>1</td>
-          <td>2</td>
+          <th> <%= a8_q31 %> </th>
+          <th> <%= a8_q32 %> </th>
+          <th> <%= a8_q33 %> </th>
+          <th> <%= a8_q34 %> </th>
+          <th> <%= a8_q35 %> </th>
         </tr>
         <tr>
           <th>질문 4</th>
-          <td>1</td>
-          <td>2</td>
-          <td>1</td>
-          <td>1</td>
-          <td>2</td>
+          <th> <%= a8_q41 %> </th>
+          <th> <%= a8_q42 %> </th>
+          <th> <%= a8_q43 %> </th>
+          <th> <%= a8_q44 %> </th>
+          <th> <%= a8_q45 %> </th>
         </tr>
         <tr>
           <th>질문 5</th>
-          <td>1</td>
-          <td>2</td>
-          <td>1</td>
-          <td>1</td>
-          <td>2</td>
+          <th> <%= a8_q51 %> </th>
+          <th> <%= a8_q52 %> </th>
+          <th> <%= a8_q53 %> </th>
+          <th> <%= a8_q54 %> </th>
+          <th> <%= a8_q55 %> </th>
         </tr>
         <tr>
           <th>총 계</th>
@@ -320,3 +383,4 @@
     <a href="./index.html" class="fs-5" target="_self">Index</a>
   </body>
 </html>
+
