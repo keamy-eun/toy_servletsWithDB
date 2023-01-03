@@ -11,7 +11,7 @@
 toy_servletsWithDB
 
 - [Github Pages](https://github.com/keamy-eun/toy_servletsWithDB)
-- [Video]()
+- [Video](https://www.youtube.com/watch?v=_ENtELOguvM&ab_channel=%EB%A7%88%EC%B0%8C)
 
 <hr>
 
