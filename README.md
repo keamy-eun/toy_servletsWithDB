@@ -63,5 +63,4 @@ toy_servletsWithDB
   4. 정보를 Post로 전송 후 회원가입시 로그인이 되어있다면 세션만료 후 메인화면으로 이동.
 
 ## ERD
-<img src="[https://user-images.githubusercontent.com/115060986/210193461-26ea107b-26f6-49c8-ba2b-5130b6c2d6b0.PNG](https://user-images.githubusercontent.com/115060986/210287709-cf8ddc7a-26a4-427e-a897-eb32115ebd9c.png)">
-<hr>
+<img src="https://user-images.githubusercontent.com/115060986/210287709-cf8ddc7a-26a4-427e-a897-eb32115ebd9c.png">
