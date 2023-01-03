@@ -17,8 +17,9 @@
   <body>
     <%@ include file= "header.jsp" %>
 
-    <div class="div1 row">
-      <table border="1" class="main-align col-5">
+    <div class="row">
+      <div class="col-5 text-center mt-5 container">
+        <table class="table table-bordered">
         <div>
           <tr>
             <th colspan="3">유/무선 이어폰 사용량 증감 추이</th>
@@ -40,8 +41,8 @@
           </tr>
         </div>
       </table>
-
-      <nav class="col col-md-2 col-lg-2 navbar bg-primary navbar-primary h-50 fs-5 rounded me-5">
+    </div>
+      <nav class="col col-md-2 col-lg-2 navbar bg-primary bg-opacity-50 navbar-primary h-50 fs-5 rounded me-5">
        <div class="navbar-nav">
           <ul style="width : 250px">
             <li>

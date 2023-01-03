@@ -48,7 +48,7 @@
                 <input
                   name="memberPW"
                   id="pw"
-                  type="text"
+                  type="password"
                   class="form-control"
                 />
               </label>

@@ -18,40 +18,45 @@
     <%@ include file= "header.jsp" %>
 
     <div class="div1 row">
-      <table border="1" class="main-align col-5">
-        <tr>
-          <th colspan="2">2021 업체별 이어폰 시장 점유율</th>
-        </tr>
-        <tr>
-          <td>애플</td>
-          <td>26%</td>
-        </tr>
-        <tr>
-          <td>삼성</td>
-          <td>7%</td>
-        </tr>
-        <tr>
-          <td>UBL</td>
-          <td>4%</td>
-        </tr>
-        <tr>
-          <td>Skullcandy</td>
-          <td>4%</td>
-        </tr>
-        <tr>
-          <td>QCY</td>
-          <td>3%</td>
-        </tr>
-        <tr>
-          <td>boat</td>
-          <td>3%</td>
-        </tr>
-        <tr>
-          <td>기타</td>
-          <td>53%</td>
-        </tr>
-      </table>
-      <nav class="col col-md-2 col-lg-2 navbar bg-primary navbar-primary h-50 fs-5 rounded me-5">
+  <div class="row">
+      <div class="col-5 text-center mt-5 container">
+        <table class="table table-bordered table-striped-columns">
+          <thead>
+            <tr>
+              <th colspan="2">2021 업체별 이어폰 시장 점유율</th>
+            </tr>
+            <tr>
+              <td>애플</td>
+              <td>26%</td>
+            </tr>
+            <tr>
+              <td>삼성</td>
+              <td>7%</td>
+            </tr>
+            <tr>
+              <td>UBL</td>
+              <td>4%</td>
+            </tr>
+            <tr>
+              <td>Skullcandy</td>
+              <td>4%</td>
+            </tr>
+            <tr>
+              <td>QCY</td>
+              <td>3%</td>
+            </tr>
+            <tr>
+              <td>boat</td>
+              <td>3%</td>
+            </tr>
+            <tr>
+              <td>기타</td>
+              <td>53%</td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <nav class="col col-md-2 col-lg-2 navbar bg-primary bg-opacity-50 navbar-primary h-50 fs-5 rounded me-5">
        <div class="navbar-nav">
           <ul style="width : 250px">
             <li>

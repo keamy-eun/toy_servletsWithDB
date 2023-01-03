@@ -1,5 +1,5 @@
 INSERT INTO USERDATA (USER_UID, NAME, ID, PASSWORD, PHONE_NUMBER, BIRTHDAY, EMAIL, SMS_AD, EMAIL_AD)
-VALUES ('U1', '마키', 'marky01', '11101', '010-1597-1753', '1992-01-04', 'marky01@naver.com', true, false);
+VALUES ('U1', '관리자', 'admin', '11101', '010-1597-1753', '1992-01-04', 'eun30137@naver.com', true, false);
 
 INSERT INTO USERDATA (USER_UID, NAME, ID, PASSWORD, PHONE_NUMBER, BIRTHDAY, EMAIL, SMS_AD, EMAIL_AD)
 VALUES ('U2', '리키', 'riky02', '11102', '010-7597-4865', '1988-08-11', 'riky02@naver.com', false, false);
