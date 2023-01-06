@@ -22,7 +22,7 @@
       <!-- main -->
       <div class="contain p-1 d-flex justify-content-center">
         <img
-          class="mt-1 rounded w-75"
+          class="mt-1 rounded w-50"
           src="https://user-images.githubusercontent.com/115060986/210201437-8c8da087-0d2c-419b-9ed2-23b7d25da728.jpg"
           alt=""
         />
