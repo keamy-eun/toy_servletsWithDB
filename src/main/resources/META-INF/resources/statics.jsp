@@ -27,7 +27,7 @@
         />
       </div>
       <nav
-        class="col col-md-2 col-lg-2 navbar bg-primary navbar-primary h-50 fs-5 rounded me-5"
+        class="col col-md-2 col-lg-2 navbar bg-primary bg-opacity-50 navbar-primary h-50 fs-5 rounded me-5"
       >
         <div class="navbar-nav">
           <ul>
