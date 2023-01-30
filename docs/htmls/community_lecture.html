@@ -13,7 +13,10 @@
     />
 
     <!-- CSS링크 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css"
+    />
   </head>
   <body>
     <!-- -------------------- -->
@@ -21,133 +24,178 @@
     <nav class="nav nav-tabs justify-content-center bg-dark bg-opacity-75 p-2">
       <ul class="nav fs-5">
         <li>
-          <a href="/docs/htmls/main.html" class="nav-link fw-bold text-info">은정이 아카데미</a>
+          <a
+            href="./main.html"
+            target="_self"
+            class="nav-link fw-bold text-info"
+            >은정이 아카데미</a
+          >
         </li>
         <li>
           <a
-            href="/docs/htmls/introduction_academy.html"
+            href="./introduction_academy.html"
+            target="_self"
             class="nav-link text-white"
             >학원안내</a
           >
         </li>
-        <li><a href="/docs/htmls/main.html" class="nav-link text-white">온라인강의</a></li>
-        <li><a href="/docs/htmls/community_lecture.html" class="nav-link text-white">커뮤니티</a></li>
+        <li><a href="" class="nav-link text-white">온라인강의</a></li>
+        <li>
+          <a
+            href="./community_lecture.html"
+            target="_self"
+            class="nav-link text-white"
+            >커뮤니티</a
+          >
+        </li>
         <li><a href="" class="nav-link text-white">마이페이지</a></li>
       </ul>
     </nav>
 
     <!-- -------------------------- -->
     <div class="text-center container-fluid">
-  <div class="row">
-
-    <!--  -->
-    <div class="row">
-        <!-- Sidebar -->
-        <div class="col-auto wrapper border border-1 m-3 p-3">
-          <nav id="sidebar">
-            <div class="text-secondary">
-              <h3>은정이 아카데미</h3>
-            </div>
-            <ul class="list-unstyled components fs-5">
-              <li class="border-top border-1 p-2">
-                <a href="#" class="text-decoration-none text-secondary">학원소개</a>
-              </li>
-              <li class="border-top border-1 p-2">
-                <a href="#" class="text-decoration-none text-secondary">학습소개</a>
-              </li>
-              <li class="border-top border-1 p-2">
-                <a href="#" class="text-decoration-none text-secondary">입학소개</a>
-              </li>
-              <li class="border-top border-1 p-2">
-                <a href="#" class="text-decoration-none text-secondary">학원위치</a>
-              </li>
-              <li class="border-top border-1 p-2">
-                <a href="#" class="text-decoration-none text-secondary">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      <div class="row">
         <!--  -->
-        <div class="container col-7 mt-5">
-    
-          <!-- 글쓰기 -->
-          <div class="mb-3 text-end">
-            <button class="btn btn-default">글쓰기</button>
+        <div class="row">
+          <!-- Sidebar -->
+          <div class="col-auto wrapper border border-1 m-3 p-3">
+            <nav id="sidebar">
+              <div class="text-secondary">
+                <h3>은정이 아카데미</h3>
+              </div>
+              <ul class="list-unstyled components fs-5">
+                <li class="border-top border-1 p-2">
+                  <a
+                    href="/docs/htmls/introduction_academy.html"
+                    class="text-decoration-none text-secondary"
+                    >학원소개</a
+                  >
+                </li>
+                <li class="border-top border-1 p-2">
+                  <a
+                    href="/docs/htmls/introduction_learning.html"
+                    class="text-decoration-none text-secondary"
+                    >학습소개</a
+                  >
+                </li>
+                <li class="border-top border-1 p-2">
+                  <a
+                    href="/docs/htmls/introduction_enroll.html"
+                    class="text-decoration-none text-secondary"
+                    >입학안내</a
+                  >
+                </li>
+                <li class="border-top border-1 p-2">
+                  <a
+                    href="/docs/htmls/introduction_location.html"
+                    class="text-decoration-none text-secondary"
+                    >학원위치</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
-    
-    
-          <!-- 게시판 테이블 -->
-          <div class="col-12">
-            <div class="card">
-            <div class="card-header">
-            <h3 class="card-title">공지사항</h3>
-            <div class="card-tools">
-            <div class="input-group input-group-sm" style="width: 150px;">
-            <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-            <div class="input-group-append">
-            <button type="submit" class="btn btn-default">
-            검색
-            </button>
-            </div>
-            </div>
-            </div>
-            </div>
-            
-            <div class="card-body table-responsive p-0">
-            <table class="table table-hover text-nowrap">
-            <thead>
-            <tr>
-            <th>NO</th>
-            <th>제목</th>
-            <th>작성자</th>
-            <th>작성일</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <td>4</td>
-            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-            <td>John Doe</td>
-            <td>2023-01-12</td>
-            </tr>
-            <tr>
-            <td>3</td>
-            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-            <td>Alexander Pierce</td>
-            <td>2023-01-11</td>
-            </tr>
-            <tr>
-            <td>2</td>
-            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-            <td>Bob Doe</td>
-            <td>2023-01-03</td>
-            </tr>
-            <tr>
-            <td>1</td>
-            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-            <td>Mike Doe</td>
-            <td>2023-01-02</td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
-            
-            </div>
-            
+
+          <!--  -->
+          <div class="container col-7 mt-5">
+            <!-- 글쓰기 -->
+            <div class="mb-3 text-end">
+              <button class="btn btn-default">글쓰기</button>
             </div>
 
+            <!-- 게시판 테이블 -->
+            <div class="col-12 text-start">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">강좌 게시판</h3>
+                  <div class="card-tools">
+                    <div
+                      class="input-group input-group-sm"
+                      style="width: 150px"
+                    >
+                      <input
+                        type="text"
+                        name="table_search"
+                        class="form-control float-right"
+                        placeholder="Search"
+                      />
+                      <div class="input-group-append">
+                        <button type="submit" class="btn btn-default">
+                          검색
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-          <!-- 검색 -->
-          <div class="mt-5">
-            <form action="">
-              <input type="text" placeholder=" 검색어를 입력하세요 ">
-              <button class="border-white">검색</button>
-            </form>
+                <div class="card-body table-responsive p-0">
+                  <table class="table table-hover text-nowrap">
+                    <thead>
+                      <tr>
+                        <th>NO</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>작성일</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>5</td>
+                        <td>[문법 입문] 기초 문법 공부 3단계</td>
+                        <td>John Doe</td>
+                        <td>2023-01-12</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>[문법 입문] 기초 문법 공부 2단계</td>
+                        <td>John Doe</td>
+                        <td>2023-01-12</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>[문법 입문] 기초 문법 공부 1단계</td>
+                        <!-- <td>Alexander Pierce</td> -->
+                        <td>John Doe</td>
+                        <td>2023-01-11</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>[회화 입문] 회화, 영어로 말해봐!! 30일의 기적</td>
+                        <td>Bob Doe</td>
+                        <td>2023-01-03</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>[독해 입문] 물마시듯 매일매일 영어독해</td>
+                        <td>Mike Doe</td>
+                        <td>2023-01-02</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- 페이징 -->
+              <div class="text-center">
+                <button>이전</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>다음</button>
+              </div>
+            </div>
           </div>
-    
-      
         </div>
       </div>
+    </div>
+
+    <hr />
+    <ul>
+      <li><a href="./community_lecturer.html">community_lecturer</a></li>
+      <li><a href="./community_noctice.html">community_noctice</a></li>
+      <li><a href="./community_student.html">community_student</a></li>
+    </ul>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
