@@ -59,6 +59,14 @@
             >마이페이지</a
           >
         </li>
+        <li>
+          <a
+            href="./admin_member.html"
+            class="nav-link text-white"
+            target="_self"
+            >관리자페이지</a
+          >
+        </li>
       </ul>
       <ul class="nav fs-7">
         <li>
@@ -109,65 +117,89 @@
           </nav>
         </div>
         <div class="col container p-5">
-          <h1>회원관리</h1>
+          <h1>통계화면</h1>
           <br />
           <!-- table start -->
-          <div class="card-body table-responsive p-0">
-            <table class="table table-hover text-nowrap">
-              <thead>
-                <tr class="bordered-top">
-                  <th><input type="checkbox" name="" id="" /></th>
-                  <th>유저고유번호</th>
-                  <th>이름</th>
-                  <th>등급</th>
-                  <th>생년월일</th>
-                  <th>이메일주소</th>
-                  <th>SMS광고수신여부</th>
-                  <th>Email광고수신여부</th>
-                  <th>수정</th>
-                  <th>삭제</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><input type="checkbox" name="" id="" /></td>
-                  <td>U1</td>
-                  <td>은원기</td>
-                  <td>학생</td>
-                  <td>1992-01-04</td>
-                  <td>eun30137@naver.com</td>
-                  <td>Y</td>
-                  <td>N</td>
-                  <td><button class="btn btn-success">수정</button></td>
-                  <td><button class="btn btn-danger">삭제</button></td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" name="" id="" /></td>
-                  <td>U2</td>
-                  <td>동그라미</td>
-                  <td>관리자</td>
-                  <td>1999-01-04</td>
-                  <td>circle04@naver.com</td>
-                  <td>N</td>
-                  <td>N</td>
-                  <td><button class="btn btn-success">수정</button></td>
-                  <td><button class="btn btn-danger">삭제</button></td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" name="" id="" /></td>
-                  <td>U3</td>
-                  <td>세로미</td>
-                  <td>강사</td>
-                  <td>1988-01-04</td>
-                  <td>seromi11@naver.com</td>
-                  <td>Y</td>
-                  <td>Y</td>
-                  <td><button class="btn btn-success">수정</button></td>
-                  <td><button class="btn btn-danger">삭제</button></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <table class="table table-hover text-nowrap">
+            <thead>
+              <tr class="bordered-top">
+                <th></th>
+                <th>1월</th>
+                <th>2월</th>
+                <th>3월</th>
+                <th>유저고유번호</th>
+                <th>유저고유번호</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" name="" id="" /></td>
+                <td>U1</td>
+                <td>은원기</td>
+                <td>학생</td>
+                <td>1992-01-04</td>
+                <td>eun30137@naver.com</td>
+                <td>Y</td>
+                <td>N</td>
+                <td>
+                  <button class="btn btn-success">
+                    <a
+                      class="text-decoration-none text-white"
+                      href="./admin_edit.html"
+                      >수정</a
+                    >
+                  </button>
+                </td>
+                <td>
+                  <button class="btn btn-danger">삭제</button>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id="" /></td>
+                <td>U2</td>
+                <td>동그라미</td>
+                <td>관리자</td>
+                <td>1999-01-04</td>
+                <td>circle04@naver.com</td>
+                <td>N</td>
+                <td>N</td>
+                <td>
+                  <button class="btn btn-success">
+                    <a
+                      class="text-decoration-none text-white"
+                      href="./admin_edit.html"
+                      >수정</a
+                    >
+                  </button>
+                </td>
+                <td>
+                  <button class="btn btn-danger">삭제</button>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id="" /></td>
+                <td>U3</td>
+                <td>세로미</td>
+                <td>강사</td>
+                <td>1988-01-04</td>
+                <td>seromi11@naver.com</td>
+                <td>Y</td>
+                <td>Y</td>
+                <td>
+                  <button class="btn btn-success">
+                    <a
+                      class="text-decoration-none text-white"
+                      href="./admin_edit.html"
+                      >수정</a
+                    >
+                  </button>
+                </td>
+                <td>
+                  <button class="btn btn-danger">삭제</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
