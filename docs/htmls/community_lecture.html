@@ -139,94 +139,86 @@
             <!-- 게시판 테이블 -->
             <div class="col-12 text-start">
               <div class="card">
-                <div class="card-header">
-                  <!-- 테이블 navbar  -->
-                  <!-- 이후에 링크 선택 시 페이지 내에서 변경이 가능하도록  -->
-                  <div class="row">
-                    <div class="col">
-                      <div class="btn-group mt-2">
-                        <a href="#" class="btn">강좌게시판</a>
-                        <a href="#" class="btn">학생게시판</a>
-                        <a href="#" class="btn">공지사항</a>
-                      </div>
-                    </div>
-                  </div>
+                <div class="card-header ">
+                  <h3 class="card-title"><a href="#" class="text-black"> 학생게시판 &nbsp</a></h3>
+                  <h3 class="card-title"><a href="#" class="text-black"> 강좌게시판 &nbsp</a></h3>
+                  <h3 class="card-title"><a href="#" class="text-black"> 공지사항 &nbsp</a></h3>
                   <div class="card-tools">
                     <div
                       class="input-group input-group-sm"
                       style="width: 150px"
                     >
-                      <!-- <input
+                      <input
                         type="text"
                         name="table_search"
                         class="form-control float-right"
                         placeholder="Search"
-                      /> -->
+                      />
                       <div class="input-group-append">
-                        <!-- <button type="submit" class="btn btn-default">
+                        <button type="submit" class="btn btn-default">
                           검색
-                        </button> -->
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
+              
 
-                <div class="card-body table-responsive p-0">
-                  <table class="table table-hover text-nowrap">
-                    <thead>
-                      <tr>
-                        <th>NO</th>
-                        <th>제목</th>
-                        <th>작성자</th>
-                        <th>작성일</th>
-                        <th>조회수</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>5</td>
-                        <td>
-                          <a href="./community_post.html" class=""
-                            >[문법 입문] 기초 문법 공부 3단계 (클릭 가능/ 확인용
-                            링크)</a
-                          >
-                        </td>
-                        <td>John Doe</td>
-                        <td>2023-01-12</td>
-                        <td>12</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>[문법 입문] 기초 문법 공부 2단계</td>
-                        <td>John Doe</td>
-                        <td>2023-01-12</td>
-                        <td>20</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>[문법 입문] 기초 문법 공부 1단계</td>
-                        <!-- <td>Alexander Pierce</td> -->
-                        <td>John Doe</td>
-                        <td>2023-01-11</td>
-                        <td>32</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>[회화 입문] 회화, 영어로 말해봐!! 30일의 기적</td>
-                        <td>Bob Doe</td>
-                        <td>2023-01-03</td>
-                        <td>40</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>[독해 입문] 물마시듯 매일매일 영어독해</td>
-                        <td>Mike Doe</td>
-                        <td>2023-01-02</td>
-                        <td>52</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="card-body table-responsive p-0">
+                <table class="table table-hover text-nowrap">
+                  <thead>
+                    <tr>
+                      <th>NO</th>
+                      <th>제목</th>
+                      <th>작성자</th>
+                      <th>작성일</th>
+                      <th>조회수</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>5</td>
+                      <td>
+                        <a href="./community_post.html" class=""
+                          >[문법 입문] 기초 문법 공부 3단계 (클릭 가능/ 확인용
+                          링크)</a
+                        >
+                      </td>
+                      <td>John Doe</td>
+                      <td>2023-01-12</td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>[문법 입문] 기초 문법 공부 2단계</td>
+                      <td>John Doe</td>
+                      <td>2023-01-12</td>
+                      <td>20</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>[문법 입문] 기초 문법 공부 1단계</td>
+                      <!-- <td>Alexander Pierce</td> -->
+                      <td>John Doe</td>
+                      <td>2023-01-11</td>
+                      <td>32</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>[회화 입문] 회화, 영어로 말해봐!! 30일의 기적</td>
+                      <td>Bob Doe</td>
+                      <td>2023-01-03</td>
+                      <td>40</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>[독해 입문] 물마시듯 매일매일 영어독해</td>
+                      <td>Mike Doe</td>
+                      <td>2023-01-02</td>
+                      <td>52</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
 
               <!-- 페이징 -->
@@ -238,6 +230,18 @@
                 <button class="btn">4</button>
                 <button class="btn">다음</button>
               </div>
+            </div>
+
+            <div class="input-group input-group-sm mt-3">
+              
+              <input
+                type="text"
+                name="table_search"
+                class="form-control float-right"
+                placeholder="Search"
+              />
+
+              <button type="submit" class="btn btn-default">검색</button>
             </div>
           </div>
         </div>
@@ -254,8 +258,6 @@
   </body>
 </html>
 
-<!-- 말머리! 참고 강좌게시판의 메뉴태그 넣어두기
-페이지를 늘리지 않고 누를때마다 페이지 내에서 바뀌도록 -->
-<!-- 학생과 강좌는 합치고 공지사항도 합쳐서 놓기-->
+
 <!-- https://getbootstrap.com/docs/4.0/components/navbar/
  참고 -->
