@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css"
     />
+    <link rel="stylesheet" href="./css/commons.css" />
   </head>
   <body>
     <!-- -------------------- -->
@@ -110,7 +111,7 @@
                   <a
                     href="./community_lecture.html"
                     class="text-decoration-none text-secondary"
-                    >강좌 게시판</a
+                    >학생 커뮤니티</a
                   >
                 </li>
                 <li class="border-top border-1 p-2">
@@ -118,20 +119,6 @@
                     href="./community_lecturer.html"
                     class="text-decoration-none text-secondary"
                     >강사 게시판</a
-                  >
-                </li>
-                <li class="border-top border-1 p-2">
-                  <a
-                    href="./community_student.html"
-                    class="text-decoration-none text-secondary"
-                    >학생 게시판</a
-                  >
-                </li>
-                <li class="border-top border-1 p-2">
-                  <a
-                    href="./community_noctice.html"
-                    class="text-decoration-none text-secondary"
-                    >공지사항</a
                   >
                 </li>
               </ul>
@@ -153,22 +140,32 @@
             <div class="col-12 text-start">
               <div class="card">
                 <div class="card-header">
-                  <h3 class="card-title">강좌 게시판</h3>
+                  <!-- 테이블 navbar  -->
+                  <!-- 이후에 링크 선택 시 페이지 내에서 변경이 가능하도록  -->
+                  <div class="row">
+                    <div class="col">
+                      <div class="btn-group mt-2">
+                        <a href="#" class="btn">강좌게시판</a>
+                        <a href="#" class="btn">학생게시판</a>
+                        <a href="#" class="btn">공지사항</a>
+                      </div>
+                    </div>
+                  </div>
                   <div class="card-tools">
                     <div
                       class="input-group input-group-sm"
                       style="width: 150px"
                     >
-                      <input
+                      <!-- <input
                         type="text"
                         name="table_search"
                         class="form-control float-right"
                         placeholder="Search"
-                      />
+                      /> -->
                       <div class="input-group-append">
-                        <button type="submit" class="btn btn-default">
+                        <!-- <button type="submit" class="btn btn-default">
                           검색
-                        </button>
+                        </button> -->
                       </div>
                     </div>
                   </div>
@@ -256,3 +253,9 @@
     <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/js/adminlte.min.js"></script>
   </body>
 </html>
+
+<!-- 말머리! 참고 강좌게시판의 메뉴태그 넣어두기
+페이지를 늘리지 않고 누를때마다 페이지 내에서 바뀌도록 -->
+<!-- 학생과 강좌는 합치고 공지사항도 합쳐서 놓기-->
+<!-- https://getbootstrap.com/docs/4.0/components/navbar/
+ 참고 -->
