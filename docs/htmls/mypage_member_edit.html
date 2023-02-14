@@ -83,7 +83,7 @@
     <hr />
 
     <!--  -->
-    <div class="text-center container-fluid">
+    <div class="text-start container-fluid">
       <div class="row">
         <!-- Sidebar -->
         <div class="col-auto wrapper border border-1 m-3 p-3">
@@ -277,16 +277,16 @@
   
               <hr class="mb-4" />
               <div class="d-flex justify-content-between">
-              <button class="btn btn-primary ms-3 mt-4 me-3 d-flex justify-content-start" type="submit">
-                <a href="./main.html" class="text-decoration-none text-white"
-                  >수정</a
-                >
-              </button>
-              <button class="btn btn-danger ms-3 mt-4 me-3 d-flex justify-content-start" type="submit">
-                <a href="./main.html" class="text-decoration-none text-white"
+                <div>
+                  <a href="./main.html" class="btn btn-primary"
+                    >수정</a
+                  >
+                </div>
+              <div>
+                <a href="./main.html" onclick="alert('정말 회원을 탈퇴하시겠습니까?')" class="btn btn-danger"
                   >회원탈퇴</a
                 >
-              </button>
+              </div>
               </div>
             </form>
           </div>
