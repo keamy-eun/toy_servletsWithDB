@@ -75,7 +75,7 @@ public class MainController {
     }
 
     // 메인페이지
-    @RequestMapping(value="/main", method = RequestMethod.GET)
+    @RequestMapping(value={"/main","/", ""}, method = RequestMethod.GET)
     public ModelAndView getMain(@RequestParam Map<String, Object> params, ModelAndView modelAndView ){
         // Object resultMap = 서비스.get서비스메소드(params);
         // modelAndView.addObject("resultMap", resultMap);
